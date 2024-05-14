@@ -1,0 +1,39 @@
+﻿
+@model Website_Library.Models.Sach
+@if (Model != null)
+{
+    <div class="col-xs-12">
+        <table style="border:none">
+            <tr>
+                <td rowspan="6">
+                    @*<img src="~/BookImages/@Model.ImagePath" style="height:270px;" alt="">*@
+                    <img src="~/BookImages/@Model.ImagePath?random=@DateTime.Now.Ticks" alt="Sach Image" style="height:270px" />
+
+                </td>
+                @if (Model.SoLuong > 0)
+                {
+                    <td><b>Tình trạng : </b>Còn hàng</td>
+                }
+                else
+                {
+                    <td><b>Tình trạng : </b>Hết hàng</td>
+                }
+            </tr>
+            <tr>
+                <td><h4>Tên Sách: @Model.TenSach (@Model.NamXB)</h4></td>
+            </tr>
+            <tr>
+                <td><b>Thể Loại : </b>@Model.TheLoai.TenTheLoai</td>
+            </tr>
+            <tr>
+                <td><b>Tên Tác Giả : </b>@Model.TacGia.TenTacGia</td>
+            </tr>
+            <tr>
+                <td><b>NXB : </b>@Model.NXB.TenNXB</td>
+            </tr>
+            <tr>
+                <td><b>Số Lượng : </b>@Model.SoLuong</td>
+            </tr>
+        </table>
+    </div>
+}

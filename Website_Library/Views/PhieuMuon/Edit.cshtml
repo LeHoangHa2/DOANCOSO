@@ -1,0 +1,104 @@
+﻿@model Website_Library.Models.PhieuMuon
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/Index.cshtml";
+}
+
+<style>
+    /* CSS */
+    .edit-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .edit-title {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .edit-form {
+        margin-bottom: 20px;
+    }
+
+    .edit-label {
+        font-weight: bold;
+    }
+
+    .edit-actions {
+        text-align: center;
+    }
+
+    .btn-save {
+        margin-right: 10px;
+    }
+</style>
+
+<div class="edit-container">
+    <div class="edit-title">Chỉnh sửa</div>
+    <div class="edit-form">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+        <div class="form-group">
+            @*@Html.LabelFor(model => model.MaPhieuMuon, htmlAttributes: new { @class = "control-label" })
+        @Html.EditorFor(model => model.MaPhieuMuon, new { htmlAttributes = new { @class = "form-control", disabled = "disabled" } })
+        @Html.ValidationMessageFor(model => model.MaPhieuMuon, "", new { @class = "text-danger" })*@
+            @Html.HiddenFor(model => model.MaPhieuMuon)
+        </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.MaSinhVien, htmlAttributes: new { @class = "control-label" })
+                @Html.DropDownList("MaSinhVien", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.MaSinhVien, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.NgayMuon, htmlAttributes: new { @class = "control-label" })
+                @Html.EditorFor(model => model.NgayMuon, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NgayMuon, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.NgayTraDuKien, htmlAttributes: new { @class = "control-label" })
+                @Html.EditorFor(model => model.NgayTraDuKien, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NgayTraDuKien, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.NgayTraThucTe, htmlAttributes: new { @class = "control-label" })
+                @Html.EditorFor(model => model.NgayTraThucTe, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NgayTraThucTe, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.TinhTrang, htmlAttributes: new { @class = "control-label" })
+                @Html.EditorFor(model => model.TinhTrang, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.TinhTrang, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.GhiChu, htmlAttributes: new { @class = "control-label" })
+                @Html.EditorFor(model => model.GhiChu, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.GhiChu, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.MaSach, htmlAttributes: new { @class = "control-label" })
+                @Html.DropDownList("MaSach", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.MaSach, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="edit-actions">
+                <button type="submit" class="btn btn-success btn-save">Save</button>
+                @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-default btn-save" })
+            </div>
+        }
+    </div>
+</div>

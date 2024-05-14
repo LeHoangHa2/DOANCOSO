@@ -1,0 +1,25 @@
+﻿body {
+    transition: background-color 0.5s ease;
+    background-color: #fff; /* Màu nền mặc định */
+    color: #000; /* Màu văn bản mặc định */
+}
+
+.dark-mode {
+    background-color: #000; /* Màu nền chủ đề tối */
+    color: #fff; /* Màu văn bản chủ đề tối */
+}
+
+#theme-toggle {
+    cursor: pointer;
+}
+
+#sun, #moon {
+    font-size: 100px;
+    color: #f8c418; /* Màu của mặt trời */
+    transition: opacity 0.5s ease;
+}
+
+#moon {
+    color: #aab8c2; /* Màu của mặt trăng */
+    opacity: 0;
+}

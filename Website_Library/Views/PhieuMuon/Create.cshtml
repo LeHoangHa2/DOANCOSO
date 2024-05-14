@@ -1,0 +1,99 @@
+﻿@model Website_Library.Models.PhieuMuon
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/Index.cshtml";
+}
+
+<style>
+    /* CSS */
+    .input-field, .dropdown-label {
+        width: 200px; /* Điều chỉnh chiều rộng cho input field và dropdown label */
+    }
+
+    .input-label, .control-label {
+        width: 120px; /* Điều chỉnh chiều rộng cho label */
+        margin-left: 10px; /* Điều chỉnh khoảng cách bên trái */
+        margin-right: 50px;
+    }
+
+    .btn {
+        color: black;
+    }
+</style>
+
+<h2 style="margin-left:40%; color:red; font-size:50px">PHIẾU MƯỢN</h2>
+<hr />
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.HiddenFor(model => model.MaPhieuMuon, new { htmlAttributes = new { @class = "form-control input-field" } })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.MaSinhVien, htmlAttributes: new { @class = "control-label col-md-2 dropdown-label" })
+            <div class="col-md-10">
+                @Html.DropDownList("MaSinhVien", ViewBag.MaSinhVien as SelectList, "-- Chọn Sinh Viên --", htmlAttributes: new { @class = "form-control dropdown-label" })
+                @Html.ValidationMessageFor(model => model.MaSinhVien, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NgayMuon, htmlAttributes: new { @class = "control-label col-md-2 input-label" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NgayMuon, new { htmlAttributes = new { @class = "form-control input-field" } })
+                @Html.ValidationMessageFor(model => model.NgayMuon, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NgayTraDuKien, htmlAttributes: new { @class = "control-label col-md-2 input-label" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NgayTraDuKien, new { htmlAttributes = new { @class = "form-control input-field" } })
+                @Html.ValidationMessageFor(model => model.NgayTraDuKien, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NgayTraThucTe, htmlAttributes: new { @class = "control-label col-md-2 input-label" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NgayTraThucTe, new { htmlAttributes = new { @class = "form-control input-field" } })
+                @Html.ValidationMessageFor(model => model.NgayTraThucTe, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @*@Html.LabelFor(model => model.TinhTrang, htmlAttributes: new { @class = "control-label col-md-2 input-label" })*@
+            <div class="col-md-10">
+                @Html.HiddenFor(model => model.TinhTrang, new { htmlAttributes = new { @class = "form-control input-field" } })
+                @*@Html.ValidationMessageFor(model => model.TinhTrang, "", new { @class = "text-danger" })*@
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.GhiChu, htmlAttributes: new { @class = "control-label col-md-2 input-label" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.GhiChu, new { htmlAttributes = new { @class = "form-control input-field" } })
+                @Html.ValidationMessageFor(model => model.GhiChu, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.MaSach, htmlAttributes: new { @class = "control-label col-md-2 dropdown-label" })
+            <div class="col-md-10">
+                @Html.DropDownList("MaSach", ViewBag.MaSach as SelectList, "-- Chọn Sách --", htmlAttributes: new { @class = "form-control dropdown-label" })
+                @Html.ValidationMessageFor(model => model.MaSach, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-primary" />
+                @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-default" })
+            </div>
+        </div>
+    </div>
+}

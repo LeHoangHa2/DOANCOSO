@@ -1,0 +1,103 @@
+﻿@*@model IEnumerable<Website_Library.Models.Sach>*@
+@using PagedList.Mvc
+@model PagedList.IPagedList<Website_Library.Models.Sach>
+@{
+    ViewBag.Title = "Danh sách sách";
+    Layout = "~/Views/Shared/Index.cshtml";
+}
+
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 style="margin-left:30%; color: red">DANH SÁCH SÁCH</h1>
+    <p>
+        @*@Html.ActionLink("Thêm mới", "Create", null, new { @class = "btn btn-primary" })*@
+        <a href="@Url.Action("Create")" class="btn btn-primary">
+            <i class="fas fa-plus"></i> Thêm mới
+        </a>
+
+    </p>
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th style="color: #333;">Tên Sách</th>
+                            <th style="color: #333;">Năm Xuất Bản</th>
+                            <th style="color: #333;">Số Lượng</th>
+                            <th style="color: #333;">Ngôn Ngữ</th>
+                            <th style="color: #333;">Ngày Tạo</th>
+                            <th style="color: #333;">Ngày Cập Nhật</th>
+                            <th style="color: #333;">Ảnh</th>
+                            <th style="color: #333;">Nhà Xuất Bản</th>
+                            <th style="color: #333;">Tác Giả</th>
+                            <th style="color: #333;">Thể Loại</th>
+                            <th style="color: #333;">Ngăn</th>
+                            <th style="color: #333;">Kệ</th>
+                            <th style="color: #333;">Thao Tác</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            @foreach (var item in Model)
+                            {
+                            <tr>
+                                <td>@Html.DisplayFor(modelItem => item.TenSach)</td>
+                                <td>@Html.DisplayFor(modelItem => item.NamXB)</td>
+                                <td>@Html.DisplayFor(modelItem => item.SoLuong)</td>
+                                <td>@Html.DisplayFor(modelItem => item.NgonNgu)</td>
+                                <td>@Html.DisplayFor(modelItem => item.TimeCreate)</td>
+                                <td>@Html.DisplayFor(modelItem => item.TimeUpdate)</td>
+                                <td>
+                                    @if (!string.IsNullOrEmpty(item.ImagePath))
+                                    {
+                                        <img src="~/BookImages/@item.ImagePath?random=@DateTime.Now.Ticks" alt="Sach Image" style="max-width: 100px; max-height: 100px;" />
+                                    }
+                                    else
+                                    {
+                                        <p>No image available</p>
+                                    }
+                                </td>
+                                <td>@Html.DisplayFor(modelItem => item.NXB.TenNXB)</td>
+                                <td>@Html.DisplayFor(modelItem => item.TacGia.TenTacGia)</td>
+                                <td>@Html.DisplayFor(modelItem => item.TheLoai.TenTheLoai)</td>
+                                <td>@Html.DisplayFor(modelItem => item.ViTri.Ngan)</td>
+                                <td>@Html.DisplayFor(modelItem => item.ViTri.Ke)</td>
+                                <td>
+                                    @*@Html.ActionLink("Sửa", "Edit", new { id = item.MaSach }, new { @class = "btn btn-primary btn-sm" })
+                                        @Html.ActionLink("Chi tiết", "Details", new { id = item.MaSach }, new { @class = "btn btn-success btn-sm" })
+                                        @Html.ActionLink("Xóa", "Delete", new { id = item.MaSach }, new { @class = "btn btn-danger btn-sm" })*@
+                                    <a href="@Url.Action("Edit", new { id = item.MaSach })" class="btn btn-primary btn-sm" style="margin-right: 5px;">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+
+                                    <a href="@Url.Action("Details", new { id = item.MaSach })" class="btn btn-success btn-sm" style="margin-right: 5px;">
+                                        <i class="fas fa-info-circle"></i>
+                                    </a>
+
+                                    <a href="@Url.Action("Delete", new { id = item.MaSach })" class="btn btn-danger btn-sm">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+
+                                </td>
+                            </tr>
+                        }
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), new PagedListRenderOptions() { Display = PagedListDisplayMode.IfNeeded, DisplayLinkToFirstPage = PagedListDisplayMode.Always, DisplayLinkToLastPage = PagedListDisplayMode.Always })
+
+    </div>

@@ -1,0 +1,50 @@
+﻿#navbar {
+    transition: background-color 0.3s, color 0.3s;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #navbar.navbar-scrolled {
+        background-color: black;
+    }
+
+        #navbar.navbar-scrolled a {
+            color: white;
+        }
+
+            #navbar.navbar-scrolled a:hover {
+                color: #baa6cf;
+            }
+.nav-link {
+    color: white;
+    z-index: 1;
+}
+.nav-item:hover .nav-link {
+    color: #baa6cf;
+}
+.input-group .form-control {
+    width: 200px;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:40px;
+}
+    .menu ul {
+        list-style: none;
+        
+    }
+        .menu ul li {
+            display: inline-block;
+            margin-right: 20px;
+            margin-top:30px;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color:black;
+        }

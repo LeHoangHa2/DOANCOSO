@@ -1,0 +1,658 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CHUCNANG">
+          <Key>
+            <PropertyRef Name="Ma_ChucNang" />
+          </Key>
+          <Property Name="Ma_ChucNang" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Ten_ChucNang" Type="nvarchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="LOAI_TAIKHOAN">
+          <Key>
+            <PropertyRef Name="Ma_LoaiTK" />
+          </Key>
+          <Property Name="Ma_LoaiTK" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Ten_LoaiTK" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="NXB">
+          <Key>
+            <PropertyRef Name="MaNXB" />
+          </Key>
+          <Property Name="MaNXB" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="TenNXB" Type="nvarchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PHANQUYEN">
+          <Key>
+            <PropertyRef Name="Ma_LoaiTK" />
+            <PropertyRef Name="Ma_ChucNang" />
+          </Key>
+          <Property Name="Ma_LoaiTK" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Ma_ChucNang" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PhieuMuon">
+          <Key>
+            <PropertyRef Name="MaPhieuMuon" />
+          </Key>
+          <Property Name="MaPhieuMuon" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="MaSinhVien" Type="nvarchar" MaxLength="50" />
+          <Property Name="NgayMuon" Type="date" />
+          <Property Name="NgayTraDuKien" Type="date" />
+          <Property Name="NgayTraThucTe" Type="date" />
+          <Property Name="TinhTrang" Type="nvarchar" MaxLength="50" />
+          <Property Name="GhiChu" Type="nvarchar(max)" />
+          <Property Name="MaSach" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Sach">
+          <Key>
+            <PropertyRef Name="MaSach" />
+          </Key>
+          <Property Name="MaSach" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="TenSach" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="MaLoaiSach" Type="nvarchar" MaxLength="50" />
+          <Property Name="NamXB" Type="int" />
+          <Property Name="MaNXB" Type="nvarchar" MaxLength="50" />
+          <Property Name="SoLuong" Type="int" />
+          <Property Name="MaViTri" Type="nvarchar" MaxLength="50" />
+          <Property Name="MaTacGia" Type="nvarchar" MaxLength="50" />
+          <Property Name="NgonNgu" Type="nvarchar" MaxLength="50" />
+          <Property Name="TimeCreate" Type="datetime" />
+          <Property Name="TimeUpdate" Type="datetime" />
+          <Property Name="ImagePath" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="SinhVien">
+          <Key>
+            <PropertyRef Name="MaSinhVien" />
+          </Key>
+          <Property Name="MaSinhVien" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="TenSinhVien" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="NgaySinh" Type="date" />
+          <Property Name="Email" Type="nvarchar" MaxLength="200" />
+          <Property Name="GioiTinh" Type="nvarchar" MaxLength="10" />
+          <Property Name="DiaChi" Type="nvarchar" MaxLength="255" />
+          <Property Name="DienThoai" Type="nvarchar" MaxLength="20" />
+          <Property Name="TaiKhoan" Type="nvarchar" MaxLength="100" />
+          <Property Name="MatKhau" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="TacGia">
+          <Key>
+            <PropertyRef Name="MaTacGia" />
+          </Key>
+          <Property Name="MaTacGia" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="TenTacGia" Type="nvarchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TAIKHOAN">
+          <Key>
+            <PropertyRef Name="Username" />
+          </Key>
+          <Property Name="Username" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Ma_LoaiTK" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TheLoai">
+          <Key>
+            <PropertyRef Name="MaTheLoai" />
+          </Key>
+          <Property Name="MaTheLoai" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="TenTheLoai" Type="nvarchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ViTri">
+          <Key>
+            <PropertyRef Name="MaViTri" />
+          </Key>
+          <Property Name="MaViTri" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Ngan" Type="nvarchar" MaxLength="255" />
+          <Property Name="Ke" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_PHANQUYEN_CHUCNANG">
+          <End Role="CHUCNANG" Type="Self.CHUCNANG" Multiplicity="1" />
+          <End Role="PHANQUYEN" Type="Self.PHANQUYEN" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CHUCNANG">
+              <PropertyRef Name="Ma_ChucNang" />
+            </Principal>
+            <Dependent Role="PHANQUYEN">
+              <PropertyRef Name="Ma_ChucNang" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PHANQUYEN_LOAI_TAIKHOAN">
+          <End Role="LOAI_TAIKHOAN" Type="Self.LOAI_TAIKHOAN" Multiplicity="1" />
+          <End Role="PHANQUYEN" Type="Self.PHANQUYEN" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LOAI_TAIKHOAN">
+              <PropertyRef Name="Ma_LoaiTK" />
+            </Principal>
+            <Dependent Role="PHANQUYEN">
+              <PropertyRef Name="Ma_LoaiTK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PhieuMuon_Sach">
+          <End Role="Sach" Type="Self.Sach" Multiplicity="0..1" />
+          <End Role="PhieuMuon" Type="Self.PhieuMuon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sach">
+              <PropertyRef Name="MaSach" />
+            </Principal>
+            <Dependent Role="PhieuMuon">
+              <PropertyRef Name="MaSach" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PhieuMuon_SinhVien">
+          <End Role="SinhVien" Type="Self.SinhVien" Multiplicity="0..1" />
+          <End Role="PhieuMuon" Type="Self.PhieuMuon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SinhVien">
+              <PropertyRef Name="MaSinhVien" />
+            </Principal>
+            <Dependent Role="PhieuMuon">
+              <PropertyRef Name="MaSinhVien" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sach_NXB">
+          <End Role="NXB" Type="Self.NXB" Multiplicity="0..1" />
+          <End Role="Sach" Type="Self.Sach" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NXB">
+              <PropertyRef Name="MaNXB" />
+            </Principal>
+            <Dependent Role="Sach">
+              <PropertyRef Name="MaNXB" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sach_TacGia">
+          <End Role="TacGia" Type="Self.TacGia" Multiplicity="0..1" />
+          <End Role="Sach" Type="Self.Sach" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TacGia">
+              <PropertyRef Name="MaTacGia" />
+            </Principal>
+            <Dependent Role="Sach">
+              <PropertyRef Name="MaTacGia" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sach_TheLoai">
+          <End Role="TheLoai" Type="Self.TheLoai" Multiplicity="0..1" />
+          <End Role="Sach" Type="Self.Sach" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TheLoai">
+              <PropertyRef Name="MaTheLoai" />
+            </Principal>
+            <Dependent Role="Sach">
+              <PropertyRef Name="MaLoaiSach" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sach_ViTri">
+          <End Role="ViTri" Type="Self.ViTri" Multiplicity="0..1" />
+          <End Role="Sach" Type="Self.Sach" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ViTri">
+              <PropertyRef Name="MaViTri" />
+            </Principal>
+            <Dependent Role="Sach">
+              <PropertyRef Name="MaViTri" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TAIKHOAN_LOAI_TAIKHOAN">
+          <End Role="LOAI_TAIKHOAN" Type="Self.LOAI_TAIKHOAN" Multiplicity="1" />
+          <End Role="TAIKHOAN" Type="Self.TAIKHOAN" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LOAI_TAIKHOAN">
+              <PropertyRef Name="Ma_LoaiTK" />
+            </Principal>
+            <Dependent Role="TAIKHOAN">
+              <PropertyRef Name="Ma_LoaiTK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="CHUCNANG" EntityType="Self.CHUCNANG" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LOAI_TAIKHOAN" EntityType="Self.LOAI_TAIKHOAN" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NXB" EntityType="Self.NXB" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PHANQUYEN" EntityType="Self.PHANQUYEN" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PhieuMuon" EntityType="Self.PhieuMuon" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sach" EntityType="Self.Sach" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SinhVien" EntityType="Self.SinhVien" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TacGia" EntityType="Self.TacGia" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TAIKHOAN" EntityType="Self.TAIKHOAN" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TheLoai" EntityType="Self.TheLoai" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ViTri" EntityType="Self.ViTri" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_PHANQUYEN_CHUCNANG" Association="Self.FK_PHANQUYEN_CHUCNANG">
+            <End Role="CHUCNANG" EntitySet="CHUCNANG" />
+            <End Role="PHANQUYEN" EntitySet="PHANQUYEN" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PHANQUYEN_LOAI_TAIKHOAN" Association="Self.FK_PHANQUYEN_LOAI_TAIKHOAN">
+            <End Role="LOAI_TAIKHOAN" EntitySet="LOAI_TAIKHOAN" />
+            <End Role="PHANQUYEN" EntitySet="PHANQUYEN" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PhieuMuon_Sach" Association="Self.FK_PhieuMuon_Sach">
+            <End Role="Sach" EntitySet="Sach" />
+            <End Role="PhieuMuon" EntitySet="PhieuMuon" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PhieuMuon_SinhVien" Association="Self.FK_PhieuMuon_SinhVien">
+            <End Role="SinhVien" EntitySet="SinhVien" />
+            <End Role="PhieuMuon" EntitySet="PhieuMuon" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sach_NXB" Association="Self.FK_Sach_NXB">
+            <End Role="NXB" EntitySet="NXB" />
+            <End Role="Sach" EntitySet="Sach" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sach_TacGia" Association="Self.FK_Sach_TacGia">
+            <End Role="TacGia" EntitySet="TacGia" />
+            <End Role="Sach" EntitySet="Sach" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sach_TheLoai" Association="Self.FK_Sach_TheLoai">
+            <End Role="TheLoai" EntitySet="TheLoai" />
+            <End Role="Sach" EntitySet="Sach" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sach_ViTri" Association="Self.FK_Sach_ViTri">
+            <End Role="ViTri" EntitySet="ViTri" />
+            <End Role="Sach" EntitySet="Sach" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TAIKHOAN_LOAI_TAIKHOAN" Association="Self.FK_TAIKHOAN_LOAI_TAIKHOAN">
+            <End Role="LOAI_TAIKHOAN" EntitySet="LOAI_TAIKHOAN" />
+            <End Role="TAIKHOAN" EntitySet="TAIKHOAN" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CHUCNANG">
+          <Key>
+            <PropertyRef Name="Ma_ChucNang" />
+          </Key>
+          <Property Name="Ma_ChucNang" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Ten_ChucNang" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="LOAI_TAIKHOAN" Relationship="Self.PHANQUYEN" FromRole="CHUCNANG" ToRole="LOAI_TAIKHOAN" />
+        </EntityType>
+        <EntityType Name="LOAI_TAIKHOAN">
+          <Key>
+            <PropertyRef Name="Ma_LoaiTK" />
+          </Key>
+          <Property Name="Ma_LoaiTK" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Ten_LoaiTK" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="TAIKHOANs" Relationship="Self.FK_TAIKHOAN_LOAI_TAIKHOAN" FromRole="LOAI_TAIKHOAN" ToRole="TAIKHOAN" />
+          <NavigationProperty Name="CHUCNANGs" Relationship="Self.PHANQUYEN" FromRole="LOAI_TAIKHOAN" ToRole="CHUCNANG" />
+        </EntityType>
+        <EntityType Name="NXB">
+          <Key>
+            <PropertyRef Name="MaNXB" />
+          </Key>
+          <Property Name="MaNXB" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TenNXB" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Saches" Relationship="Self.FK_Sach_NXB" FromRole="NXB" ToRole="Sach" />
+        </EntityType>
+        <EntityType Name="PhieuMuon">
+          <Key>
+            <PropertyRef Name="MaPhieuMuon" />
+          </Key>
+          <Property Name="MaPhieuMuon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MaSinhVien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NgayMuon" Type="DateTime" Precision="0" />
+          <Property Name="NgayTraDuKien" Type="DateTime" Precision="0" />
+          <Property Name="NgayTraThucTe" Type="DateTime" Precision="0" />
+          <Property Name="TinhTrang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="GhiChu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MaSach" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Sach" Relationship="Self.FK_PhieuMuon_Sach" FromRole="PhieuMuon" ToRole="Sach" />
+          <NavigationProperty Name="SinhVien" Relationship="Self.FK_PhieuMuon_SinhVien" FromRole="PhieuMuon" ToRole="SinhVien" />
+        </EntityType>
+        <EntityType Name="Sach">
+          <Key>
+            <PropertyRef Name="MaSach" />
+          </Key>
+          <Property Name="MaSach" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TenSach" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MaLoaiSach" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NamXB" Type="Int32" />
+          <Property Name="MaNXB" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SoLuong" Type="Int32" />
+          <Property Name="MaViTri" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MaTacGia" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NgonNgu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TimeCreate" Type="DateTime" Precision="3" />
+          <Property Name="TimeUpdate" Type="DateTime" Precision="3" />
+          <Property Name="ImagePath" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="NXB" Relationship="Self.FK_Sach_NXB" FromRole="Sach" ToRole="NXB" />
+          <NavigationProperty Name="PhieuMuons" Relationship="Self.FK_PhieuMuon_Sach" FromRole="Sach" ToRole="PhieuMuon" />
+          <NavigationProperty Name="TacGia" Relationship="Self.FK_Sach_TacGia" FromRole="Sach" ToRole="TacGia" />
+          <NavigationProperty Name="TheLoai" Relationship="Self.FK_Sach_TheLoai" FromRole="Sach" ToRole="TheLoai" />
+          <NavigationProperty Name="ViTri" Relationship="Self.FK_Sach_ViTri" FromRole="Sach" ToRole="ViTri" />
+        </EntityType>
+        <EntityType Name="SinhVien">
+          <Key>
+            <PropertyRef Name="MaSinhVien" />
+          </Key>
+          <Property Name="MaSinhVien" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TenSinhVien" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NgaySinh" Type="DateTime" Precision="0" />
+          <Property Name="Email" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="GioiTinh" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="DiaChi" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DienThoai" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="TaiKhoan" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="MatKhau" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="PhieuMuons" Relationship="Self.FK_PhieuMuon_SinhVien" FromRole="SinhVien" ToRole="PhieuMuon" />
+        </EntityType>
+        <EntityType Name="TacGia">
+          <Key>
+            <PropertyRef Name="MaTacGia" />
+          </Key>
+          <Property Name="MaTacGia" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TenTacGia" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Saches" Relationship="Self.FK_Sach_TacGia" FromRole="TacGia" ToRole="Sach" />
+        </EntityType>
+        <EntityType Name="TAIKHOAN">
+          <Key>
+            <PropertyRef Name="Username" />
+          </Key>
+          <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Ma_LoaiTK" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="LOAI_TAIKHOAN" Relationship="Self.FK_TAIKHOAN_LOAI_TAIKHOAN" FromRole="TAIKHOAN" ToRole="LOAI_TAIKHOAN" />
+        </EntityType>
+        <EntityType Name="TheLoai">
+          <Key>
+            <PropertyRef Name="MaTheLoai" />
+          </Key>
+          <Property Name="MaTheLoai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TenTheLoai" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Saches" Relationship="Self.FK_Sach_TheLoai" FromRole="TheLoai" ToRole="Sach" />
+        </EntityType>
+        <EntityType Name="ViTri">
+          <Key>
+            <PropertyRef Name="MaViTri" />
+          </Key>
+          <Property Name="MaViTri" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Ngan" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Ke" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Saches" Relationship="Self.FK_Sach_ViTri" FromRole="ViTri" ToRole="Sach" />
+        </EntityType>
+        <Association Name="FK_TAIKHOAN_LOAI_TAIKHOAN">
+          <End Role="LOAI_TAIKHOAN" Type="Self.LOAI_TAIKHOAN" Multiplicity="1" />
+          <End Role="TAIKHOAN" Type="Self.TAIKHOAN" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LOAI_TAIKHOAN">
+              <PropertyRef Name="Ma_LoaiTK" />
+            </Principal>
+            <Dependent Role="TAIKHOAN">
+              <PropertyRef Name="Ma_LoaiTK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sach_NXB">
+          <End Role="NXB" Type="Self.NXB" Multiplicity="0..1" />
+          <End Role="Sach" Type="Self.Sach" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NXB">
+              <PropertyRef Name="MaNXB" />
+            </Principal>
+            <Dependent Role="Sach">
+              <PropertyRef Name="MaNXB" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PhieuMuon_Sach">
+          <End Role="Sach" Type="Self.Sach" Multiplicity="0..1" />
+          <End Role="PhieuMuon" Type="Self.PhieuMuon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sach">
+              <PropertyRef Name="MaSach" />
+            </Principal>
+            <Dependent Role="PhieuMuon">
+              <PropertyRef Name="MaSach" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PhieuMuon_SinhVien">
+          <End Role="SinhVien" Type="Self.SinhVien" Multiplicity="0..1" />
+          <End Role="PhieuMuon" Type="Self.PhieuMuon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SinhVien">
+              <PropertyRef Name="MaSinhVien" />
+            </Principal>
+            <Dependent Role="PhieuMuon">
+              <PropertyRef Name="MaSinhVien" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sach_TacGia">
+          <End Role="TacGia" Type="Self.TacGia" Multiplicity="0..1" />
+          <End Role="Sach" Type="Self.Sach" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TacGia">
+              <PropertyRef Name="MaTacGia" />
+            </Principal>
+            <Dependent Role="Sach">
+              <PropertyRef Name="MaTacGia" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sach_TheLoai">
+          <End Role="TheLoai" Type="Self.TheLoai" Multiplicity="0..1" />
+          <End Role="Sach" Type="Self.Sach" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TheLoai">
+              <PropertyRef Name="MaTheLoai" />
+            </Principal>
+            <Dependent Role="Sach">
+              <PropertyRef Name="MaLoaiSach" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sach_ViTri">
+          <End Role="ViTri" Type="Self.ViTri" Multiplicity="0..1" />
+          <End Role="Sach" Type="Self.Sach" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ViTri">
+              <PropertyRef Name="MaViTri" />
+            </Principal>
+            <Dependent Role="Sach">
+              <PropertyRef Name="MaViTri" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="PHANQUYEN">
+          <End Role="CHUCNANG" Type="Self.CHUCNANG" Multiplicity="*" />
+          <End Role="LOAI_TAIKHOAN" Type="Self.LOAI_TAIKHOAN" Multiplicity="*" />
+        </Association>
+        <EntityContainer Name="Data_Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CHUCNANGs" EntityType="Self.CHUCNANG" />
+          <EntitySet Name="LOAI_TAIKHOAN" EntityType="Self.LOAI_TAIKHOAN" />
+          <EntitySet Name="NXBs" EntityType="Self.NXB" />
+          <EntitySet Name="PhieuMuons" EntityType="Self.PhieuMuon" />
+          <EntitySet Name="Saches" EntityType="Self.Sach" />
+          <EntitySet Name="SinhViens" EntityType="Self.SinhVien" />
+          <EntitySet Name="TacGias" EntityType="Self.TacGia" />
+          <EntitySet Name="TAIKHOANs" EntityType="Self.TAIKHOAN" />
+          <EntitySet Name="TheLoais" EntityType="Self.TheLoai" />
+          <EntitySet Name="ViTris" EntityType="Self.ViTri" />
+          <AssociationSet Name="FK_TAIKHOAN_LOAI_TAIKHOAN" Association="Self.FK_TAIKHOAN_LOAI_TAIKHOAN">
+            <End Role="LOAI_TAIKHOAN" EntitySet="LOAI_TAIKHOAN" />
+            <End Role="TAIKHOAN" EntitySet="TAIKHOANs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sach_NXB" Association="Self.FK_Sach_NXB">
+            <End Role="NXB" EntitySet="NXBs" />
+            <End Role="Sach" EntitySet="Saches" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PhieuMuon_Sach" Association="Self.FK_PhieuMuon_Sach">
+            <End Role="Sach" EntitySet="Saches" />
+            <End Role="PhieuMuon" EntitySet="PhieuMuons" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PhieuMuon_SinhVien" Association="Self.FK_PhieuMuon_SinhVien">
+            <End Role="SinhVien" EntitySet="SinhViens" />
+            <End Role="PhieuMuon" EntitySet="PhieuMuons" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sach_TacGia" Association="Self.FK_Sach_TacGia">
+            <End Role="TacGia" EntitySet="TacGias" />
+            <End Role="Sach" EntitySet="Saches" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sach_TheLoai" Association="Self.FK_Sach_TheLoai">
+            <End Role="TheLoai" EntitySet="TheLoais" />
+            <End Role="Sach" EntitySet="Saches" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sach_ViTri" Association="Self.FK_Sach_ViTri">
+            <End Role="ViTri" EntitySet="ViTris" />
+            <End Role="Sach" EntitySet="Saches" />
+          </AssociationSet>
+          <AssociationSet Name="PHANQUYEN" Association="Self.PHANQUYEN">
+            <End Role="CHUCNANG" EntitySet="CHUCNANGs" />
+            <End Role="LOAI_TAIKHOAN" EntitySet="LOAI_TAIKHOAN" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Data_Entities">
+          <EntitySetMapping Name="CHUCNANGs">
+            <EntityTypeMapping TypeName="Model.CHUCNANG">
+              <MappingFragment StoreEntitySet="CHUCNANG">
+                <ScalarProperty Name="Ma_ChucNang" ColumnName="Ma_ChucNang" />
+                <ScalarProperty Name="Ten_ChucNang" ColumnName="Ten_ChucNang" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LOAI_TAIKHOAN">
+            <EntityTypeMapping TypeName="Model.LOAI_TAIKHOAN">
+              <MappingFragment StoreEntitySet="LOAI_TAIKHOAN">
+                <ScalarProperty Name="Ma_LoaiTK" ColumnName="Ma_LoaiTK" />
+                <ScalarProperty Name="Ten_LoaiTK" ColumnName="Ten_LoaiTK" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NXBs">
+            <EntityTypeMapping TypeName="Model.NXB">
+              <MappingFragment StoreEntitySet="NXB">
+                <ScalarProperty Name="MaNXB" ColumnName="MaNXB" />
+                <ScalarProperty Name="TenNXB" ColumnName="TenNXB" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PhieuMuons">
+            <EntityTypeMapping TypeName="Model.PhieuMuon">
+              <MappingFragment StoreEntitySet="PhieuMuon">
+                <ScalarProperty Name="MaPhieuMuon" ColumnName="MaPhieuMuon" />
+                <ScalarProperty Name="MaSinhVien" ColumnName="MaSinhVien" />
+                <ScalarProperty Name="NgayMuon" ColumnName="NgayMuon" />
+                <ScalarProperty Name="NgayTraDuKien" ColumnName="NgayTraDuKien" />
+                <ScalarProperty Name="NgayTraThucTe" ColumnName="NgayTraThucTe" />
+                <ScalarProperty Name="TinhTrang" ColumnName="TinhTrang" />
+                <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+                <ScalarProperty Name="MaSach" ColumnName="MaSach" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Saches">
+            <EntityTypeMapping TypeName="Model.Sach">
+              <MappingFragment StoreEntitySet="Sach">
+                <ScalarProperty Name="MaSach" ColumnName="MaSach" />
+                <ScalarProperty Name="TenSach" ColumnName="TenSach" />
+                <ScalarProperty Name="MaLoaiSach" ColumnName="MaLoaiSach" />
+                <ScalarProperty Name="NamXB" ColumnName="NamXB" />
+                <ScalarProperty Name="MaNXB" ColumnName="MaNXB" />
+                <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+                <ScalarProperty Name="MaViTri" ColumnName="MaViTri" />
+                <ScalarProperty Name="MaTacGia" ColumnName="MaTacGia" />
+                <ScalarProperty Name="NgonNgu" ColumnName="NgonNgu" />
+                <ScalarProperty Name="TimeCreate" ColumnName="TimeCreate" />
+                <ScalarProperty Name="TimeUpdate" ColumnName="TimeUpdate" />
+                <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SinhViens">
+            <EntityTypeMapping TypeName="Model.SinhVien">
+              <MappingFragment StoreEntitySet="SinhVien">
+                <ScalarProperty Name="MaSinhVien" ColumnName="MaSinhVien" />
+                <ScalarProperty Name="TenSinhVien" ColumnName="TenSinhVien" />
+                <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+                <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+                <ScalarProperty Name="DienThoai" ColumnName="DienThoai" />
+                <ScalarProperty Name="TaiKhoan" ColumnName="TaiKhoan" />
+                <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TacGias">
+            <EntityTypeMapping TypeName="Model.TacGia">
+              <MappingFragment StoreEntitySet="TacGia">
+                <ScalarProperty Name="MaTacGia" ColumnName="MaTacGia" />
+                <ScalarProperty Name="TenTacGia" ColumnName="TenTacGia" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TAIKHOANs">
+            <EntityTypeMapping TypeName="Model.TAIKHOAN">
+              <MappingFragment StoreEntitySet="TAIKHOAN">
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Ma_LoaiTK" ColumnName="Ma_LoaiTK" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TheLoais">
+            <EntityTypeMapping TypeName="Model.TheLoai">
+              <MappingFragment StoreEntitySet="TheLoai">
+                <ScalarProperty Name="MaTheLoai" ColumnName="MaTheLoai" />
+                <ScalarProperty Name="TenTheLoai" ColumnName="TenTheLoai" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ViTris">
+            <EntityTypeMapping TypeName="Model.ViTri">
+              <MappingFragment StoreEntitySet="ViTri">
+                <ScalarProperty Name="MaViTri" ColumnName="MaViTri" />
+                <ScalarProperty Name="Ngan" ColumnName="Ngan" />
+                <ScalarProperty Name="Ke" ColumnName="Ke" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="PHANQUYEN" TypeName="Model.PHANQUYEN" StoreEntitySet="PHANQUYEN">
+            <EndProperty Name="CHUCNANG">
+              <ScalarProperty Name="Ma_ChucNang" ColumnName="Ma_ChucNang" />
+            </EndProperty>
+            <EndProperty Name="LOAI_TAIKHOAN">
+              <ScalarProperty Name="Ma_LoaiTK" ColumnName="Ma_LoaiTK" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

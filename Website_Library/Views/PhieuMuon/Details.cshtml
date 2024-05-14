@@ -1,0 +1,82 @@
+﻿@model Website_Library.Models.PhieuMuon
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/Index.cshtml";
+}
+
+<style>
+    /* CSS */
+    .details-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .details-title {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .details-label {
+        font-weight: bold;
+    }
+
+    .details-value {
+        margin-bottom: 10px;
+        margin-left: 15px;
+    }
+
+    .details-actions {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .details-item {
+        margin-left: 100px;
+    }
+</style>
+
+<div class="details-container">
+    <div class="details-title">Thông tin</div>
+    <div class="details-content">
+        <div class="details-item">
+            <span class="details-label">@Html.DisplayNameFor(model => model.SinhVien.TenSinhVien)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.SinhVien.TenSinhVien)</span>
+        </div>
+        <div class="details-item">
+            <span class="details-label">@Html.DisplayNameFor(model => model.Sach.TenSach)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.Sach.TenSach)</span>
+        </div>
+        <div class="details-item">
+            <span class="details-label">@Html.DisplayNameFor(model => model.NgayMuon)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.NgayMuon)</span>
+        </div>
+        <div class="details-item">
+            <span class="details-label">@Html.DisplayNameFor(model => model.NgayTraDuKien)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.NgayTraDuKien)</span>
+        </div>
+        <div class="details-item">
+            <span class="details-label">@Html.DisplayNameFor(model => model.NgayTraThucTe)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.NgayTraThucTe)</span>
+        </div>
+        <div class="details-item">
+            <span class="details-label">@Html.DisplayNameFor(model => model.TinhTrang)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.TinhTrang)</span>
+        </div>
+        <div class="details-item">
+            <span class="details-label">@Html.DisplayNameFor(model => model.GhiChu)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.GhiChu)</span>
+        </div>
+
+
+    </div>
+    <div class="details-actions">
+        <a href="@Url.Action("Edit", new { id = Model.MaPhieuMuon })" class="btn btn-warning">Edit</a>
+        @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-default" })
+    </div>
+</div>

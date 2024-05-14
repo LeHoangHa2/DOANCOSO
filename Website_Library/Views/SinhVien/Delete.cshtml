@@ -1,0 +1,95 @@
+﻿@model Website_Library.Models.SinhVien
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/Index.cshtml";
+}
+
+<style>
+    /* CSS */
+    .delete-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .delete-title {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .delete-content {
+        margin-bottom: 20px;
+    }
+
+    .delete-label {
+        font-weight: bold;
+    }
+
+    .delete-actions {
+        text-align: center;
+    }
+
+    .btn-delete {
+        margin-right: 10px;
+    }
+
+    .details-item {
+        margin-left: 200px;
+    }
+</style>
+
+<div class="delete-container">
+    <div class="delete-title"></div>
+    <div class="delete-content">
+        <h3 style="margin-left: 50px">Bạn có chắc chắn muốn xóa không?</h3>
+        <div class="details-item">
+            <span class="delete-label">@Html.DisplayNameFor(model => model.MaSinhVien)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.MaSinhVien)</span>
+        </div>
+        <div class="details-item">
+            <span class="delete-label">@Html.DisplayNameFor(model => model.TenSinhVien)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.TenSinhVien)</span>
+        </div>
+        <div class="details-item">
+            <span class="delete-label">@Html.DisplayNameFor(model => model.Email)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.Email)</span>
+        </div>
+        <div class="details-item">
+            <span class="delete-label">@Html.DisplayNameFor(model => model.NgaySinh)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.NgaySinh)</span>
+        </div>
+        <div class="details-item">
+            <span class="delete-label">@Html.DisplayNameFor(model => model.GioiTinh)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.GioiTinh)</span>
+        </div>
+        <div class="details-item">
+            <span class="delete-label">@Html.DisplayNameFor(model => model.DiaChi)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.DiaChi)</span>
+        </div>
+        <div class="details-item">
+            <span class="delete-label">@Html.DisplayNameFor(model => model.DienThoai)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.DienThoai)</span>
+        </div>
+        <div class="details-item">
+            <span class="delete-label">@Html.DisplayNameFor(model => model.TaiKhoan)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.TaiKhoan)</span>
+        </div>
+        <div class="details-item">
+            <span class="delete-label">@Html.DisplayNameFor(model => model.MatKhau)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.MatKhau)</span>
+        </div>
+    </div>
+    <div class="delete-actions">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <button type="submit" class="btn btn-danger btn-delete">Delete</button>
+            @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-default btn-delete" })
+        }
+    </div>
+</div>

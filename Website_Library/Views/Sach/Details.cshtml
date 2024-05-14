@@ -1,0 +1,107 @@
+﻿@model Website_Library.Models.Sach
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/Index.cshtml";
+}
+
+<style>
+    /* CSS */
+    .details-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        display: flex;
+    }
+
+    .details-content {
+        flex: 1;
+        margin-left: 20px;
+    }
+
+    .details-title {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .details-label {
+        font-weight: bold;
+    }
+
+    .details-value {
+        margin-bottom: 10px;
+    }
+
+    .details-actions {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .details-title{
+        margin-right:600px;
+        width:200px;
+    }
+</style>
+
+<div class="details-container">
+    <div>
+        @if (!string.IsNullOrEmpty(Model.ImagePath))
+        {
+            <img src="~/BookImages/@Model.ImagePath" alt="Book Image" style="margin-top:70px; height:200px;max-width:300px; margin-right:50px" />
+        }
+        else
+        {
+            <p>No image available</p>
+        }
+    </div>
+    <div class="details-content">
+        <div class="details-title" >Thông tin</div>
+        <div class="details-item">
+            <span class="details-label">@Html.DisplayNameFor(model => model.TenSach)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.TenSach)</span>
+        </div>
+        <div class="details-item">
+            <span class="details-label">@Html.DisplayNameFor(model => model.NamXB)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.NamXB)</span>
+        </div>
+        <div class="details-item">
+            <span class="details-label">@Html.DisplayNameFor(model => model.SoLuong)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.SoLuong)</span>
+        </div>
+        <div class="details-item">
+            <span class="details-label">@Html.DisplayNameFor(model => model.NgonNgu)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.NgonNgu)</span>
+        </div>
+        <div class="details-item">
+            <span class="details-label">@Html.DisplayNameFor(model => model.TimeCreate)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.TimeCreate)</span>
+        </div>
+        <div class="details-item">
+            <span class="details-label">@Html.DisplayNameFor(model => model.TimeUpdate)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.TimeUpdate)</span>
+        </div>
+        <div class="details-item">
+            <span class="details-label">@Html.DisplayNameFor(model => model.NXB.TenNXB)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.NXB.TenNXB)</span>
+        </div>
+        <div class="details-item">
+            <span class="details-label">@Html.DisplayNameFor(model => model.TacGia.TenTacGia)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.TacGia.TenTacGia)</span>
+        </div>
+        <div class="details-item">
+            <span class="details-label">@Html.DisplayNameFor(model => model.TheLoai.TenTheLoai)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.TheLoai.TenTheLoai)</span>
+        </div>
+        <div class="details-item">
+            <span class="details-label">@Html.DisplayNameFor(model => model.ViTri.Ngan)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.ViTri.Ngan)</span>
+        </div>
+    </div>
+</div>
+<p class="details-actions">
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaSach }, new { @class = "btn btn-warning" }) |
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-default" })
+</p>

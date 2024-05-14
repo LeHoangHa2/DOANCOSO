@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5a01919b786a4130b4c6a13b1b0fd2b6" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.CHUCNANG" Width="1.5" PointX="5.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.LOAI_TAIKHOAN" Width="1.5" PointX="8" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.NXB" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.PhieuMuon" Width="1.5" PointX="5.25" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Sach" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.SinhVien" Width="1.5" PointX="3" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TacGia" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TAIKHOAN" Width="1.5" PointX="10.25" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TheLoai" Width="1.5" PointX="0.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ViTri" Width="1.5" PointX="0.75" PointY="10.25" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_TAIKHOAN_LOAI_TAIKHOAN" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sach_NXB" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_PhieuMuon_Sach" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_PhieuMuon_SinhVien" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sach_TacGia" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sach_TheLoai" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Sach_ViTri" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.PHANQUYEN" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,62 @@
+﻿@model Website_Library.Models.ViTri
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/Index.cshtml";
+}
+
+<style>
+    /* CSS */
+    .details-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .details-title {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .details-label {
+        font-weight: bold;
+    }
+
+    .details-value {
+        margin-bottom: 10px;
+        margin-left:15px
+    }
+
+    .details-actions {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .details-item{
+        margin-left:200px;
+    }
+</style>
+
+<div class="details-container">
+    <div class="details-title">Thông tin</div>
+    <div class="details-content">
+        @Html.HiddenFor(model => model.MaViTri)
+
+        <div class="details-item">
+            <span class="details-label">@Html.DisplayNameFor(model => model.Ngan)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.Ngan)</span>
+        </div>
+        <div class="details-item">
+            <span class="details-label">@Html.DisplayNameFor(model => model.Ke)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.Ke)</span>
+        </div>
+    </div>
+    <div class="details-actions">
+        <a href="@Url.Action("Edit", new { id = Model.MaViTri })" class="btn btn-warning">Edit</a>
+        @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-default" })
+    </div>
+</div>
+    

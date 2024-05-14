@@ -1,0 +1,57 @@
+﻿@model Website_Library.Models.ViTri
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/Index.cshtml";
+}
+
+<style>
+    /* CSS */
+    .input-field {
+        width: 300px; /* Điều chỉnh chiều dài của input */
+    }
+
+    .input-label {
+        width: 100px; /* Điều chỉnh chiều rộng của nhãn label */
+    }
+
+    .btn {
+        color: black;
+    }
+</style>
+
+<h2 style="margin-left:50%; color:red; font-size:50px">VỊ TRÍ</h2>
+<hr />
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.HiddenFor(model => model.MaViTri)
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Ngan, htmlAttributes: new { @class = "control-label col-md-2 input-label" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Ngan, new { htmlAttributes = new { @class = "form-control input-field" } })
+                @Html.ValidationMessageFor(model => model.Ngan, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Ke, htmlAttributes: new { @class = "control-label col-md-2 input-label" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Ke, new { htmlAttributes = new { @class = "form-control input-field" } })
+                @Html.ValidationMessageFor(model => model.Ke, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-primary" />
+                @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-default" })
+            </div>
+        </div>
+    </div>
+}
+

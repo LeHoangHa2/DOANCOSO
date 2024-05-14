@@ -1,0 +1,101 @@
+﻿@model Website_Library.Models.SinhVien
+@{
+    ViewBag.Title = "Đăng kí";
+    Layout = "~/Views/Shared/_Login.cshtml";
+}
+
+@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "login100-form validate-form" }))
+{
+    @Html.AntiForgeryToken()
+
+    @Html.HiddenFor(model => model.MaSinhVien)
+
+    <span class="login100-form-title" style="margin-top:20px">
+        Đăng kí tài khoản mới
+    </span>
+    @Html.HiddenFor(model => model.MaSinhVien, htmlAttributes: new { @class = "form-control input-lg" })
+
+    <div class="wrap-input100 validate-input">
+        @Html.TextBoxFor(model => model.TenSinhVien, "", new { @class = "input100", @placeholder = "Tên Sinh Viên" })
+        <span class="focus-input100"></span>
+        <span class="symbol-input100">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+        </span>
+    </div>
+    <div class="wrap-input100 validate-input">
+        @Html.TextBoxFor(model => model.Email, "", new { @class = "input100", @placeholder = "Email" })
+        <span class="focus-input100"></span>
+        <span class="symbol-input100">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+        </span>
+    </div>
+    <div class="wrap-input100 validate-input">
+        @Html.TextBoxFor(model => model.NgaySinh, "{0:dd/MM/yyyy}", new { @class = "input100 datepicker", @placeholder = "Ngày sinh" })
+        <span class="focus-input100"></span>
+        <span class="symbol-input100">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+        </span>
+    </div>
+    <div class="wrap-input100 validate-input">
+        @Html.DropDownListFor(model => model.GioiTinh, new List<SelectListItem>
+        {
+            new SelectListItem { Text = "Nam", Value = "Nam" },
+            new SelectListItem { Text = "Nữ", Value = "Nữ" }
+        }, "Chọn giới tính", new { @class = "input100" })
+        <span class="focus-input100"></span>
+        <span class="symbol-input100">
+            <i class="fa fa-venus-mars" aria-hidden="true"></i>
+        </span>
+    </div>
+
+    <div class="wrap-input100 validate-input">
+        @Html.TextBoxFor(model => model.DiaChi, "", new { @class = "input100", @placeholder = "Địa chỉ" })
+        <span class="focus-input100"></span>
+        <span class="symbol-input100">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+        </span>
+    </div>
+    <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+        @Html.TextBoxFor(model => model.DienThoai, "", new { @class = "input100", @placeholder = "Số điện thoại" })
+        <span class="focus-input100"></span>
+        <span class="symbol-input100">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+        </span>
+    </div>
+    <div class="wrap-input100 validate-input">
+        @Html.TextBoxFor(model => model.TaiKhoan, "", new { @class = "input100", @placeholder = "Tên tài khoản" })
+        <span class="focus-input100"></span>
+        <span class="symbol-input100">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+        </span>
+    </div>
+
+    <div class="wrap-input100 validate-input" data-validate="Password is required">
+        @Html.PasswordFor(model => model.MatKhau, new { @class = "input100", @placeholder = "Nhập mật khẩu" })
+        <span class="focus-input100"></span>
+        <span class="symbol-input100">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+        </span>
+    </div>
+    <div class="wrap-input100 validate-input" data-validate="Password is required">
+        @Html.PasswordFor(model => model.Repeat_Password, new { @class = "input100", @placeholder = "Nhập lại mật khẩu" })
+        <span class="focus-input100"></span>
+        <span class="symbol-input100">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+        </span>
+    </div>
+
+
+
+    <div class="container-login100-form-btn">
+        <button type="submit" class="login100-form-btn">Đăng ký</button>
+    </div>
+
+    <div class="text-center p-t-136">
+        <a class="txt2" href="/Account/Login">
+            Đã có tài khoản
+            <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+        </a>
+    </div>
+
+}

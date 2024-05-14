@@ -1,0 +1,99 @@
+﻿@model IEnumerable<Website_Library.Models.PhieuMuon>
+
+@{
+    ViewBag.Title = "Danh sách Phiếu Mượn";
+    Layout = "~/Views/Shared/Index.cshtml";
+}
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 style="margin-left:30%; color: red">DANH SÁCH PHIẾU MƯỢN</h1>
+    <p>
+        <a href="@Url.Action("Create")" class="btn btn-primary">
+            <i class="fas fa-plus"></i> Thêm mới
+        </a>
+    </p>
+    <input type="checkbox" id="filterCheckbox"> Phiếu mượn đang mượn
+
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Mã Sinh Viên</th>
+                            <th>Tên Sinh Viên</th>
+                            <th>Tên Sách</th>
+                            <th>Ngày Mượn</th>
+                            <th>Ngày Trả Dự Kiến</th>
+                            <th>Ngày Trả Thực Tế</th>
+                            <th>Tình Trạng</th>
+                            <th>Ghi Chú</th>
+                            <th>Thao Tác</th>
+
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            @foreach (var item in Model)
+                            {
+                                var cssClass = item.TinhTrang == "Đang mượn" ? "ongoing" : "";
+                            <tr class="@cssClass">
+                                <td>@Html.DisplayFor(modelItem => item.MaSinhVien)</td>
+                                <td>@Html.DisplayFor(modelItem => item.SinhVien.TenSinhVien)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Sach.TenSach)</td>
+                                <td>@Html.DisplayFor(modelItem => item.NgayMuon)</td>
+                                <td>@Html.DisplayFor(modelItem => item.NgayTraDuKien)</td>
+                                <td>@Html.DisplayFor(modelItem => item.NgayTraThucTe)</td>
+                                <td>@Html.DisplayFor(modelItem => item.TinhTrang)</td>
+                                <td>@Html.DisplayFor(modelItem => item.GhiChu)</td>
+
+                                <!-- Add other fields here -->
+                                <td>
+                                    @*@Html.ActionLink("Chi tiết", "Details", new { id = item.MaPhieuMuon }, new { @class = "btn btn-success btn-sm" })
+                                        @Html.ActionLink("Sửa", "Edit", new { id = item.MaPhieuMuon }, new { @class = "btn btn-primary btn-sm" })
+                                        @Html.ActionLink("Xóa", "Delete", new { id = item.MaPhieuMuon }, new { @class = "btn btn-danger btn-sm" })*@
+                                    <a href="@Url.Action("Edit", new { id = item.MaPhieuMuon })" class="btn btn-primary btn-sm" style="margin-right: 5px;">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+
+                                    <a href="@Url.Action("Details", new { id = item.MaPhieuMuon })" class="btn btn-success btn-sm" style="margin-right: 5px;">
+                                        <i class="fas fa-info-circle"></i>
+                                    </a>
+
+                                    <a href="@Url.Action("Delete", new { id = item.MaPhieuMuon })" class="btn btn-danger btn-sm">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+
+                                </td>
+                            </tr>
+                        }
+
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script>
+    $(document).ready(function () {
+        $("#filterCheckbox").change(function () {
+            if (this.checked) {
+                $(".ongoing").show(); // Hiển thị các hàng đang mượn
+            } else {
+                $(".ongoing").hide(); // Ẩn các hàng đang mượn
+            }
+        });
+    });
+    </script>

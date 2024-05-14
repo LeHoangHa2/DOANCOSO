@@ -1,0 +1,114 @@
+﻿@model Website_Library.Models.Sach
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/Index.cshtml";
+}
+
+<style>
+    /* CSS */
+    .delete-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        display: flex;
+    }
+
+    .delete-content {
+        flex: 1;
+        margin-left: 20px;
+    }
+
+    .delete-title {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .delete-label {
+        font-weight: bold;
+    }
+
+    .delete-actions {
+        text-align: center;
+        margin-top: 20px;
+        margin-left:500px;
+    }
+
+    .btn-delete {
+        margin-right: -900px;
+        margin-left:900px
+    }
+    .delete-title {
+        margin-right: 600px;
+        width: 200px;
+    }
+</style>
+
+<div class="delete-container">
+    <div>
+        @if (!string.IsNullOrEmpty(Model.ImagePath))
+        {
+            <img src="~/BookImages/@Model.ImagePath" alt="Book Image" style="margin-top:70px; height:200px;max-width:300px; margin-right:50px" />
+        }
+        else
+        {
+            <p>No image available</p>
+        }
+    </div>
+    <div class="delete-content">
+        <div class="delete-title"></div>
+        <h3>Bạn có chắc chắn muốn xóa không?</h3>
+        <div class="details-item">
+            <span class="delete-label">@Html.DisplayNameFor(model => model.TenSach)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.TenSach)</span>
+        </div>
+        <div class="details-item">
+            <span class="delete-label">@Html.DisplayNameFor(model => model.NamXB)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.NamXB)</span>
+        </div>
+        <div class="details-item">
+            <span class="delete-label">@Html.DisplayNameFor(model => model.SoLuong)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.SoLuong)</span>
+        </div>
+        <div class="details-item">
+            <span class="delete-label">@Html.DisplayNameFor(model => model.NgonNgu)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.NgonNgu)</span>
+        </div>
+        <div class="details-item">
+            <span class="delete-label">@Html.DisplayNameFor(model => model.TimeCreate)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.TimeCreate)</span>
+        </div>
+        <div class="details-item">
+            <span class="delete-label">@Html.DisplayNameFor(model => model.TimeUpdate)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.TimeUpdate)</span>
+        </div>
+        <div class="details-item">
+            <span class="delete-label">@Html.DisplayNameFor(model => model.NXB.TenNXB)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.NXB.TenNXB)</span>
+        </div>
+        <div class="details-item">
+            <span class="delete-label">@Html.DisplayNameFor(model => model.TacGia.TenTacGia)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.TacGia.TenTacGia)</span>
+        </div>
+        <div class="details-item">
+            <span class="delete-label">@Html.DisplayNameFor(model => model.TheLoai.TenTheLoai)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.TheLoai.TenTheLoai)</span>
+        </div>
+        <div class="details-item">
+            <span class="delete-label">@Html.DisplayNameFor(model => model.ViTri.Ngan)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.ViTri.Ngan)</span>
+        </div>
+    </div>
+</div>
+<p class="delete-actions">
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <button type="submit" class="btn btn-danger btn-delete">Delete</button>
+        @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-default btn-delete" })
+    }
+</p>

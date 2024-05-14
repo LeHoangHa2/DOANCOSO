@@ -1,0 +1,69 @@
+﻿@model Website_Library.Models.ViTri
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/Index.cshtml";
+}
+
+<style>
+    /* CSS */
+    .delete-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .delete-title {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .delete-content {
+        margin-bottom: 20px;
+    }
+
+    .delete-label {
+        font-weight: bold;
+    }
+
+    .delete-actions {
+        text-align: center;
+    }
+
+    .btn-delete {
+        margin-right: 10px;
+    }
+    .details-item {
+        margin-left: 200px;
+    }
+</style>
+
+<div class="delete-container">
+    <div class="delete-title"></div>
+    <div class="delete-content">
+        <h3 style="margin-left:50px">Bạn có chắc chắn muốn xóa không?</h3>
+        @Html.HiddenFor(model => model.MaViTri)
+
+        <div class="details-item">
+            <span class="delete-label">@Html.DisplayNameFor(model => model.Ngan)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.Ngan)</span>
+        </div>
+        <div class="details-item">
+            <span class="delete-label">@Html.DisplayNameFor(model => model.Ke)</span>
+            <span class="details-value">@Html.DisplayFor(model => model.Ke)</span>
+        </div>
+    </div>
+    <div class="delete-actions">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <button type="submit" class="btn btn-danger btn-delete">Delete</button>
+            @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-default btn-delete" })
+        }
+    </div>
+</div>
+

@@ -1,0 +1,313 @@
+﻿@{
+    string current_url = HttpContext.Current.Request.RawUrl.ToString();
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <!-- Theme skin::: Try Out different themes inside Content/skins folder-->
+    <link id="t-colors" href="~/Content/skins/default.css" rel="stylesheet" />
+    <link href="~/Content/css/Custom_byHa.css" rel="stylesheet" />
+    
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- start header -->
+        <header>
+            <div class="navbar navbar-default navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="~/"><img src="~/Assets/img/logo/logo.png" alt="" width="200px" height="52" /></a>
+                    </div>
+
+                    <div class="navbar-collapse collapse ">
+                        <ul class="nav navbar-nav" style="float: left;">
+                            <!--Trang chủ-->
+                            <li class="dropdown active">
+                                @Html.ActionLink("Trang Chủ", "", "")
+                            </li>
+
+                            <!--Trang hàng hóa-->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Danh mục <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown">Theo Thể Loại</a>
+                                        <ul class="dropdown-menu">
+                                            @{
+                                                var list_ChuDe = Website_Library.Models.DAO.TheLoai_DAO.ReadAll();
+                                                foreach (Website_Library.Models.TheLoai cd in list_ChuDe)
+                                                {
+                                                    <li>
+                                                        @Html.ActionLink(cd.TenTheLoai, "Index", "Home", routeValues: new { categoryId = cd.MaTheLoai }, htmlAttributes: null)
+                                                    </li>
+                                                }
+                                            }
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown">Theo Nhà xuất bản </a>
+                                        <ul class="dropdown-menu">
+                                            @{
+                                                var list_NXB = Website_Library.Models.DAO.NXB_DAO.ReadAll();
+                                                foreach (Website_Library.Models.NXB nxb in list_NXB)
+                                                {
+                                                    <li>
+                                                        @Html.ActionLink(nxb.TenNXB, "Index", "Home", routeValues: new { publisherId = nxb.MaNXB }, htmlAttributes: null)
+                                                    </li>
+                                                }
+                                            }
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Năm<i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    @{
+                                        var uniqueYears = Website_Library.Models.DAO.Sach_DAO.Read_All()
+                                                                .Select(s => s.NamXB)
+                                                                .Distinct()
+                                                                .OrderBy(year => year); // Sắp xếp năm giảm dần
+
+                                        // Duyệt qua từng năm đã được sắp xếp và tạo thẻ li cho mỗi năm
+                                        foreach (var year in uniqueYears)
+                                        {
+                                            <li>
+                                                @Html.ActionLink(year.ToString(), "Index", "Home", routeValues: new { namxb = year }, htmlAttributes: null)
+                                            </li>
+                                        }
+                                    }
+                                </ul>
+                            </li>
+
+                            @{
+                                string list_CN = null;
+                                if (Request.Cookies["ChucNang"] != null)
+                                {
+                                    list_CN = Request.Cookies["ChucNang"].Value;
+                                }
+
+                                if (list_CN != null && list_CN.Contains("A001"))
+                                {
+                                    <li>@Html.ActionLink("Admin", "", "")</li>
+                                }
+                            }
+
+                            @*<li>@Html.ActionLink("Giới thiệu", "About", "Home")</li>
+        <li>@Html.ActionLink("Liên hệ", "Contact", "Home")</li>*@
+                        </ul>
+
+                        <ul class="nav navbar-nav" style="float: right;">
+                            <li class="dropdown">
+                                <!-- Phần login -->
+                                @if (Request.Cookies["TaiKhoan"] == null)
+                                {
+                                    @Html.ActionLink("Đăng nhập", "Login", "Account", routeValues: new { @url = current_url }, htmlAttributes: null)
+                                }
+                                else
+                                {
+                                    string taikhoan = Request.Cookies["TaiKhoan"].Value;
+                                    var sinhVien = Website_Library.Models.DAO.SinhVien_DAO.Read(taikhoan);
+
+                                    if (sinhVien != null && sinhVien.TenSinhVien != null)
+                                    {
+                                        string tenSinhVien = sinhVien.TenSinhVien.ToString();
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                                            @tenSinhVien!<i class="fa fa-angle-down"></i>
+                                        </a>
+                                        <ul class="dropdown-menu">
+
+                                            <li>@Html.ActionLink("Xem thông tin", "ThongTinChiTiet", "SinhVien")</li>
+                                            <li>@Html.ActionLink("Đổi mật khẩu", "Change_Password", "Account")</li>
+                                            <li>@Html.ActionLink("Đăng xuất", "Logout", "Account")</li>
+                                        </ul>
+                                    }
+                                    else
+                                    {
+                            <script type="text/javascript">
+                                // Tạo một element div để chứa thông báo lỗi
+                                var errorMessageDiv = document.createElement("div");
+                                errorMessageDiv.classList.add("alert", "alert-danger");
+                                errorMessageDiv.textContent = "Thông tin sinh viên không hợp lệ!";
+
+                                // Thêm element div vào phần tử có id là "error-container" (chỗ bạn muốn hiển thị thông báo lỗi)
+                                var errorContainer = document.getElementById("error-container");
+                                errorContainer.appendChild(errorMessageDiv);
+                            </script>
+                                    }
+                                }
+                                <!-- Kết thúc login -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end header -->
+        <!-- start content -->
+        <section id="content" style="padding: 20px 0 40px 0;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 col-lg-3">
+                        <aside class="left-sidebar">
+                            <div class="widget">
+                                <form role="form">
+                                </form>
+                            </div>
+                            <div class="widget">
+                                <h5 class="widgetheading">Thể Loại</h5>
+                                <ul class="cat">
+                                    @foreach (Website_Library.Models.TheLoai cd in list_ChuDe)
+                                    {
+                                        <li><i class="fa fa-angle-right"></i>@Html.ActionLink(cd.TenTheLoai, "Index", "Home", routeValues: new { categoryId = cd.TenTheLoai }, htmlAttributes: null) <span> (@cd.count)</span></li>
+                                    }
+                                </ul>
+                            </div>
+                            <div class="widget">
+                                <h5 class="widgetheading">NHÀ XUẤT BẢN</h5>
+                                <ul class="cat">
+                                    @foreach (Website_Library.Models.NXB nxb in list_NXB)
+                                    {
+                                        <li><i class="fa fa-angle-right"></i>@Html.ActionLink(nxb.TenNXB, "Index", "Home", routeValues: new { publisherId = nxb.TenNXB }, htmlAttributes: null) <span> (@nxb.count)</span></li>
+                                    }
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+
+                    <div class="col-sm-9 col-lg-9">
+                        @RenderBody()
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end content -->
+        <!-- start footer -->
+        <!-- Remove the container if you want to extend the Footer to full width. -->
+        <div class="container my-5">
+
+            <footer class="text-white text-center text-lg-start bg-dark">
+                <!-- Grid container -->
+                <div class="container p-4">
+                    <!--Grid row-->
+                    <div class="row mt-4">
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-4">About company</h5>
+
+                            <p>
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                voluptatum deleniti atque corrupti.
+                            </p>
+
+                            <p>
+                                Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+                                molestias.
+                            </p>
+
+                            <div class="mt-4">
+                                <!-- Facebook -->
+                                <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-facebook-f"></i></a>
+                                <!-- Dribbble -->
+                                <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-dribbble"></i></a>
+                                <!-- Twitter -->
+                                <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-twitter"></i></a>
+                                <!-- Google + -->
+                                <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-google-plus-g"></i></a>
+                                <!-- Linkedin -->
+                            </div>
+                        </div>
+                        <!--Grid column-->
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+
+                            <div class="form-outline form-white mb-4">
+                                <input type="text" id="formControlLg" class="form-control form-control-lg" />
+                                <label class="form-label" for="formControlLg">Search</label>
+                            </div>
+
+                            <ul class="fa-ul" style="margin-left: 1.65em;">
+                                <li class="mb-3">
+                                    <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Warsaw, 00-967, Poland</span>
+                                </li>
+                                <li class="mb-3">
+                                    <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">contact@example.com</span>
+                                </li>
+                                <li class="mb-3">
+                                    <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 48 234 567 88</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column-->
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+                            <table class="table text-center text-white">
+                                <tbody class="fw-normal">
+                                    <tr>
+                                        <td>Mon - Thu:</td>
+                                        <td>8am - 9pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fri - Sat:</td>
+                                        <td>8am - 1am</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sunday:</td>
+                                        <td>9am - 10pm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </div>
+                <!-- Grid container -->
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2020 Copyright:
+                    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                </div>
+                <!-- Copyright -->
+            </footer>
+
+        </div>
+        <!-- End of .container -->
+        <!-- end footer -->
+
+    </div>
+    <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    @if (null != TempData["alertMessage"])
+    {
+        <script type="text/javascript">
+            alert('@TempData["alertMessage"]');
+        </script>
+        TempData["alertMessage"] = null;
+    }
+
+    @Scripts.Render("~/bundles/CustomJS")
+    @RenderSection("scripts", required: false)
+<script src="~/Content/js/js_byHa.js"></script>
+</body>
+</html>

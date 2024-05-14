@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Website_Library.Models.TacGia>
+
+@{
+    ViewBag.Title = "Danh sách tác giả";
+    Layout = "~/Views/Shared/Index.cshtml";
+}
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 style="margin-left:30%; color: red">DANH SÁCH TÁC GIẢ</h1>
+    <p>
+        @*@Html.ActionLink("Thêm mới", "Create", null, new { @class = "btn btn-primary" })*@
+        <a href="@Url.Action("Create")" class="btn btn-primary">
+            <i class="fas fa-plus"></i> Thêm mới
+        </a>
+
+    </p>
+
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th style="color: #333;">Tên Tác giả</th>
+                            <th style="color: #333;">Thao tác</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            @foreach (var item in Model)
+                            {
+                            <tr>
+                                <td>@Html.DisplayFor(modelItem => item.TenTacGia)</td>
+                                <td>
+                                    @*@Html.ActionLink("Sửa", "Edit", new { id = item.MaTacGia }, new { @class = "btn btn-primary btn-sm" })
+                                        @Html.ActionLink("Chi tiết", "Details", new { id = item.MaTacGia }, new { @class = "btn btn-success btn-sm" })
+                                        @Html.ActionLink("Xóa", "Delete", new { id = item.MaTacGia }, new { @class = "btn btn-danger btn-sm" })*@
+                                    <a href="@Url.Action("Edit", new { id = item.MaTacGia })" class="btn btn-primary btn-sm" style="margin-right: 5px;">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+
+                                    <a href="@Url.Action("Details", new { id = item.MaTacGia })" class="btn btn-success btn-sm" style="margin-right: 5px;">
+                                        <i class="fas fa-info-circle"></i>
+                                    </a>
+
+                                    <a href="@Url.Action("Delete", new { id = item.MaTacGia })" class="btn btn-danger btn-sm">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+
+                                </td>
+                            </tr>
+                        }
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>

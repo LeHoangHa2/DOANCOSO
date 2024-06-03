@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="CHUCNANG">
           <Key>
             <PropertyRef Name="Ma_ChucNang" />
@@ -25,6 +25,8 @@
           </Key>
           <Property Name="MaNXB" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="TenNXB" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="DienThoai" Type="nvarchar" MaxLength="20" />
+          <Property Name="DiaChi" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="PHANQUYEN">
           <Key>
@@ -94,6 +96,8 @@
           </Key>
           <Property Name="MaTacGia" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="TenTacGia" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="DienThoai" Type="nvarchar" MaxLength="20" />
+          <Property Name="DiaChi" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="TAIKHOAN">
           <Key>
@@ -276,8 +280,7 @@
             <End Role="TAIKHOAN" EntitySet="TAIKHOAN" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -305,6 +308,8 @@
           <Property Name="MaNXB" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="TenNXB" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="Saches" Relationship="Self.FK_Sach_NXB" FromRole="NXB" ToRole="Sach" />
+          <Property Name="DienThoai" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="DiaChi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="PhieuMuon">
           <Key>
@@ -375,6 +380,8 @@
           <Property Name="MaTacGia" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="TenTacGia" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="Saches" Relationship="Self.FK_Sach_TacGia" FromRole="TacGia" ToRole="Sach" />
+          <Property Name="DienThoai" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="DiaChi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="TAIKHOAN">
           <Key>
@@ -560,6 +567,8 @@
           <EntitySetMapping Name="NXBs">
             <EntityTypeMapping TypeName="Model.NXB">
               <MappingFragment StoreEntitySet="NXB">
+                <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+                <ScalarProperty Name="DienThoai" ColumnName="DienThoai" />
                 <ScalarProperty Name="MaNXB" ColumnName="MaNXB" />
                 <ScalarProperty Name="TenNXB" ColumnName="TenNXB" />
               </MappingFragment>
@@ -626,6 +635,8 @@
           <EntitySetMapping Name="TacGias">
             <EntityTypeMapping TypeName="Model.TacGia">
               <MappingFragment StoreEntitySet="TacGia">
+                <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+                <ScalarProperty Name="DienThoai" ColumnName="DienThoai" />
                 <ScalarProperty Name="MaTacGia" ColumnName="MaTacGia" />
                 <ScalarProperty Name="TenTacGia" ColumnName="TenTacGia" />
               </MappingFragment>

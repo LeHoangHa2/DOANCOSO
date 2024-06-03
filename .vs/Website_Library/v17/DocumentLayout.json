@@ -3,75 +3,139 @@
   "WorkspaceRootPath": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\views\\nxb\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\nxb\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\views\\nxb\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\nxb\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\views\\nxb\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\nxb\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\views\\tacgia\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\tacgia\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\views\\tacgia\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\tacgia\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\views\\tacgia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\tacgia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\views\\sinhvien\\thongtinchitiet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\sinhvien\\thongtinchitiet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\views\\tacgia\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\tacgia\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\views\\sinhvien\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\sinhvien\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\views\\tacgia\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\tacgia\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\views\\sinhvien\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\sinhvien\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\controllers\\tacgiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\controllers\\tacgiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\views\\sinhvien\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\sinhvien\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\models\\metadata\\tacgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\models\\metadata\\tacgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\models\\metadata\\sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\models\\metadata\\sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\models\\metadata\\sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\controllers\\sinhviencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\controllers\\sinhviencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\models\\metadata\\nxb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\models\\metadata\\nxb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\views\\nxb\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\nxb\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\models\\metadata\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\controllers\\nxbcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\controllers\\nxbcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\views\\nxb\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\nxb\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\models\\metadata\\sach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\models\\metadata\\sach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\models\\tacgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\models\\tacgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\views\\sinhvien\\thongtinchitiet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\sinhvien\\thongtinchitiet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\views\\sinhvien\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\sinhvien\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\views\\sinhvien\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\sinhvien\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\views\\sinhvien\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\sinhvien\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\controllers\\sinhviencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\controllers\\sinhviencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\models\\metadata\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\models\\metadata\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\models\\dao\\sinhvien_dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\models\\dao\\sinhvien_dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\models\\dao\\sinhvien_dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\views\\sach\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\views\\sach\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\sach\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\controllers\\tacgiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\controllers\\tacgiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\controllers\\theloaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\controllers\\theloaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\controllers\\theloaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\controllers\\vitricontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\controllers\\vitricontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\controllers\\vitricontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -79,27 +143,23 @@
       "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\views\\sinhvien\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\views\\sinhvien\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\sinhvien\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\views\\sinhvien\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\views\\sinhvien\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\sinhvien\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\controllers\\sachcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\controllers\\sachcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\controllers\\sachcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\models\\metadata\\sach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\models\\metadata\\sach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\views\\shared\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\views\\shared\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\shared\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\views\\sinhvien\\thongtincanhan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\views\\sinhvien\\thongtincanhan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\sinhvien\\thongtincanhan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -107,36 +167,32 @@
       "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\models\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\models\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\models\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\views\\account\\change_password.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\views\\account\\change_password.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\account\\change_password.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\models\\metadata\\passwordattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\models\\metadata\\passwordattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\models\\metadata\\passwordattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\views\\shared\\_login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\views\\shared\\_login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\views\\shared\\_login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|c:\\users\\nerve\\onedrive\\desktop\\doancoso\\website_library\\models\\metadata\\phonenumberattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\models\\metadata\\phonenumberattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\models\\metadata\\phonenumberattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|solutionrelative:website_library\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F6A71239-481F-48AA-990D-3C798BD8AE18}|Website_Library\\Website_Library.csproj|C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\website_library\\views\\admin\\adminlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -150,7 +206,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -158,7 +214,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\NXB\\Create.cshtml",
+              "RelativeDocumentMoniker": "Website_Library\\Views\\NXB\\Create.cshtml",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\NXB\\Create.cshtml",
+              "RelativeToolTip": "Website_Library\\Views\\NXB\\Create.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAC4AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T10:01:15.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "NXBController.cs",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Controllers\\NXBController.cs",
+              "RelativeDocumentMoniker": "Website_Library\\Controllers\\NXBController.cs",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Controllers\\NXBController.cs",
+              "RelativeToolTip": "Website_Library\\Controllers\\NXBController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEsAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T10:01:00.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "NXB.cs",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Models\\MetaData\\NXB.cs",
+              "RelativeDocumentMoniker": "Website_Library\\Models\\MetaData\\NXB.cs",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Models\\MetaData\\NXB.cs",
+              "RelativeToolTip": "Website_Library\\Models\\MetaData\\NXB.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T10:00:51.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TacGia.cs",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Models\\MetaData\\TacGia.cs",
+              "RelativeDocumentMoniker": "Website_Library\\Models\\MetaData\\TacGia.cs",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Models\\MetaData\\TacGia.cs",
+              "RelativeToolTip": "Website_Library\\Models\\MetaData\\TacGia.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T09:59:52.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TacGia.cs",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Models\\TacGia.cs",
+              "RelativeDocumentMoniker": "Website_Library\\Models\\TacGia.cs",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Models\\TacGia.cs",
+              "RelativeToolTip": "Website_Library\\Models\\TacGia.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T09:59:22.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Website_Library\\Views\\Home\\Index.cshtml",
@@ -171,46 +292,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "Website_Library\\Views\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "Website_Library\\Views\\Account\\Register.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADkAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-03T08:05:44.301Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "Website_Library\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "Website_Library\\Views\\Account\\Login.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-03T08:07:31.298Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SinhVien.cs",
-              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Models\\MetaData\\SinhVien.cs",
-              "RelativeDocumentMoniker": "Website_Library\\Models\\MetaData\\SinhVien.cs",
-              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Models\\MetaData\\SinhVien.cs",
-              "RelativeToolTip": "Website_Library\\Models\\MetaData\\SinhVien.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAA5wDgAAAAvAAAA",
+              "DocumentIndex": 25,
+              "Title": "SinhVienController.cs",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Controllers\\SinhVienController.cs",
+              "RelativeDocumentMoniker": "Website_Library\\Controllers\\SinhVienController.cs",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Controllers\\SinhVienController.cs",
+              "RelativeToolTip": "Website_Library\\Controllers\\SinhVienController.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAjwDUAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T07:45:48.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T08:30:28.128Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 23,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\SinhVien\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Website_Library\\Views\\SinhVien\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\SinhVien\\Edit.cshtml",
+              "RelativeToolTip": "Website_Library\\Views\\SinhVien\\Edit.cshtml",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAFIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T09:12:17.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\Admin\\Index.cshtml",
               "RelativeDocumentMoniker": "Website_Library\\Views\\Admin\\Index.cshtml",
@@ -223,59 +329,150 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "TheLoaiController.cs",
-              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Controllers\\TheLoaiController.cs",
-              "RelativeDocumentMoniker": "Website_Library\\Controllers\\TheLoaiController.cs",
-              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Controllers\\TheLoaiController.cs",
-              "RelativeToolTip": "Website_Library\\Controllers\\TheLoaiController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T09:16:20.455Z",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\NXB\\Index.cshtml",
+              "RelativeDocumentMoniker": "Website_Library\\Views\\NXB\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\NXB\\Index.cshtml",
+              "RelativeToolTip": "Website_Library\\Views\\NXB\\Index.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACoAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T10:03:16.274Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ThongTinChiTiet.cshtml",
-              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\SinhVien\\ThongTinChiTiet.cshtml",
-              "RelativeDocumentMoniker": "Website_Library\\Views\\SinhVien\\ThongTinChiTiet.cshtml",
-              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\SinhVien\\ThongTinChiTiet.cshtml",
-              "RelativeToolTip": "Website_Library\\Views\\SinhVien\\ThongTinChiTiet.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABcAAAA",
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\NXB\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Website_Library\\Views\\NXB\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\NXB\\Delete.cshtml",
+              "RelativeToolTip": "Website_Library\\Views\\NXB\\Delete.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAADgAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-03T09:16:52.151Z",
+              "WhenOpened": "2024-06-03T10:02:01.381Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SinhVienController.cs",
-              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Controllers\\SinhVienController.cs",
-              "RelativeDocumentMoniker": "Website_Library\\Controllers\\SinhVienController.cs",
-              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Controllers\\SinhVienController.cs",
-              "RelativeToolTip": "Website_Library\\Controllers\\SinhVienController.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAjwDUAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T08:30:28.128Z",
+              "DocumentIndex": 0,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\NXB\\Details.cshtml",
+              "RelativeDocumentMoniker": "Website_Library\\Views\\NXB\\Details.cshtml",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\NXB\\Details.cshtml",
+              "RelativeToolTip": "Website_Library\\Views\\NXB\\Details.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAADoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T10:02:28.028Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\SinhVien\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Website_Library\\Views\\SinhVien\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\SinhVien\\Edit.cshtml",
-              "RelativeToolTip": "Website_Library\\Views\\SinhVien\\Edit.cshtml",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAAFIAAAAAAAAA",
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\TacGia\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Website_Library\\Views\\TacGia\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\TacGia\\Delete.cshtml",
+              "RelativeToolTip": "Website_Library\\Views\\TacGia\\Delete.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAEEAAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-03T09:12:17.193Z",
+              "WhenOpened": "2024-06-03T10:07:02.537Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\TacGia\\Details.cshtml",
+              "RelativeDocumentMoniker": "Website_Library\\Views\\TacGia\\Details.cshtml",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\TacGia\\Details.cshtml",
+              "RelativeToolTip": "Website_Library\\Views\\TacGia\\Details.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAADoAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T10:07:26.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\TacGia\\Index.cshtml",
+              "RelativeDocumentMoniker": "Website_Library\\Views\\TacGia\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\TacGia\\Index.cshtml",
+              "RelativeToolTip": "Website_Library\\Views\\TacGia\\Index.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACoAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T10:08:03.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\TacGia\\Create.cshtml",
+              "RelativeDocumentMoniker": "Website_Library\\Views\\TacGia\\Create.cshtml",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\TacGia\\Create.cshtml",
+              "RelativeToolTip": "Website_Library\\Views\\TacGia\\Create.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAuwDEAAAB4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T10:06:39.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\TacGia\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Website_Library\\Views\\TacGia\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\TacGia\\Edit.cshtml",
+              "RelativeToolTip": "Website_Library\\Views\\TacGia\\Edit.cshtml",
+              "ViewState": "AQIAABYAAAAAAAAAAAAuwEAAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T10:07:40.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SinhVien.cs",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Models\\MetaData\\SinhVien.cs",
+              "RelativeDocumentMoniker": "Website_Library\\Models\\MetaData\\SinhVien.cs",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Models\\MetaData\\SinhVien.cs",
+              "RelativeToolTip": "Website_Library\\Models\\MetaData\\SinhVien.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAAACYAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T07:45:48.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TacGiaController.cs",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Controllers\\TacGiaController.cs",
+              "RelativeDocumentMoniker": "Website_Library\\Controllers\\TacGiaController.cs",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Controllers\\TacGiaController.cs",
+              "RelativeToolTip": "Website_Library\\Controllers\\TacGiaController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T09:16:20.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\NXB\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Website_Library\\Views\\NXB\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\NXB\\Edit.cshtml",
+              "RelativeToolTip": "Website_Library\\Views\\NXB\\Edit.cshtml",
+              "ViewState": "AQIAABkAAAAAAAAAAAAuwDcAAABqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T10:02:58.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\SinhVien\\Details.cshtml",
               "RelativeDocumentMoniker": "Website_Library\\Views\\SinhVien\\Details.cshtml",
@@ -283,12 +480,11 @@
               "RelativeToolTip": "Website_Library\\Views\\SinhVien\\Details.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-03T08:45:40.928Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T08:45:40.928Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 22,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\SinhVien\\Delete.cshtml",
               "RelativeDocumentMoniker": "Website_Library\\Views\\SinhVien\\Delete.cshtml",
@@ -296,129 +492,23 @@
               "RelativeToolTip": "Website_Library\\Views\\SinhVien\\Delete.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-03T08:46:06.891Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\Shared\\Index.cshtml",
-              "RelativeDocumentMoniker": "Website_Library\\Views\\Shared\\Index.cshtml",
-              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\Shared\\Index.cshtml",
-              "RelativeToolTip": "Website_Library\\Views\\Shared\\Index.cshtml",
-              "ViewState": "AQIAAH0BAAAAAAAAAAAAAJ4BAABhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-03T08:40:12.253Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T08:46:06.891Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\SinhVien\\Index.cshtml",
-              "RelativeDocumentMoniker": "Website_Library\\Views\\SinhVien\\Index.cshtml",
-              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\SinhVien\\Index.cshtml",
-              "RelativeToolTip": "Website_Library\\Views\\SinhVien\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-03T08:45:43.775Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\SinhVien\\Create.cshtml",
-              "RelativeDocumentMoniker": "Website_Library\\Views\\SinhVien\\Create.cshtml",
-              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\SinhVien\\Create.cshtml",
-              "RelativeToolTip": "Website_Library\\Views\\SinhVien\\Create.cshtml",
-              "ViewState": "AQIAADsAAAAAAAAAAAAIwFEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-03T08:33:16.912Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Website_Library\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Website_Library\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAAABUAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T18:07:53.841Z",
-              "EditorCaption": ""
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Models\\Model1.edmx",
+              "RelativeDocumentMoniker": "Website_Library\\Models\\Model1.edmx",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Models\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "Website_Library\\Models\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-06-02T18:22:20.33Z",
+              "EditorCaption": " [Diagram1]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "ViTriController.cs",
-              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Controllers\\ViTriController.cs",
-              "RelativeDocumentMoniker": "Website_Library\\Controllers\\ViTriController.cs",
-              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Controllers\\ViTriController.cs",
-              "RelativeToolTip": "Website_Library\\Controllers\\ViTriController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T09:16:20.055Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TAIKHOAN.cs",
-              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Models\\MetaData\\TAIKHOAN.cs",
-              "RelativeDocumentMoniker": "Website_Library\\Models\\MetaData\\TAIKHOAN.cs",
-              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Models\\MetaData\\TAIKHOAN.cs",
-              "RelativeToolTip": "Website_Library\\Models\\MetaData\\TAIKHOAN.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T09:25:40.026Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "SinhVien_DAO.cs",
-              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Models\\DAO\\SinhVien_DAO.cs",
-              "RelativeDocumentMoniker": "Website_Library\\Models\\DAO\\SinhVien_DAO.cs",
-              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Models\\DAO\\SinhVien_DAO.cs",
-              "RelativeToolTip": "Website_Library\\Models\\DAO\\SinhVien_DAO.cs",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAAAHwAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T09:19:52.492Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "TacGiaController.cs",
-              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Controllers\\TacGiaController.cs",
-              "RelativeDocumentMoniker": "Website_Library\\Controllers\\TacGiaController.cs",
-              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Controllers\\TacGiaController.cs",
-              "RelativeToolTip": "Website_Library\\Controllers\\TacGiaController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T09:16:20.982Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Contact.cshtml",
-              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\Home\\Contact.cshtml",
-              "RelativeDocumentMoniker": "Website_Library\\Views\\Home\\Contact.cshtml",
-              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\Home\\Contact.cshtml",
-              "RelativeToolTip": "Website_Library\\Views\\Home\\Contact.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-03T09:17:57.607Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
               "Title": "Sach.cs",
               "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Models\\MetaData\\Sach.cs",
               "RelativeDocumentMoniker": "Website_Library\\Models\\MetaData\\Sach.cs",
@@ -431,7 +521,151 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
+              "Title": "ThongTinChiTiet.cshtml",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\SinhVien\\ThongTinChiTiet.cshtml",
+              "RelativeDocumentMoniker": "Website_Library\\Views\\SinhVien\\ThongTinChiTiet.cshtml",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\SinhVien\\ThongTinChiTiet.cshtml",
+              "RelativeToolTip": "Website_Library\\Views\\SinhVien\\ThongTinChiTiet.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T09:16:52.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "TheLoaiController.cs",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Controllers\\TheLoaiController.cs",
+              "RelativeDocumentMoniker": "Website_Library\\Controllers\\TheLoaiController.cs",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Controllers\\TheLoaiController.cs",
+              "RelativeToolTip": "Website_Library\\Controllers\\TheLoaiController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T09:16:20.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Website_Library\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Website_Library\\Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T08:07:31.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Website_Library\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Website_Library\\Views\\Account\\Register.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T08:05:44.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\Shared\\Index.cshtml",
+              "RelativeDocumentMoniker": "Website_Library\\Views\\Shared\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\Shared\\Index.cshtml",
+              "RelativeToolTip": "Website_Library\\Views\\Shared\\Index.cshtml",
+              "ViewState": "AQIAAH0BAAAAAAAAAAAAAJ4BAABhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T08:40:12.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\SinhVien\\Index.cshtml",
+              "RelativeDocumentMoniker": "Website_Library\\Views\\SinhVien\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\SinhVien\\Index.cshtml",
+              "RelativeToolTip": "Website_Library\\Views\\SinhVien\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T08:45:43.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\SinhVien\\Create.cshtml",
+              "RelativeDocumentMoniker": "Website_Library\\Views\\SinhVien\\Create.cshtml",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\SinhVien\\Create.cshtml",
+              "RelativeToolTip": "Website_Library\\Views\\SinhVien\\Create.cshtml",
+              "ViewState": "AQIAADsAAAAAAAAAAAAIwFEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T08:33:16.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Website_Library\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Website_Library\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAABUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T18:07:53.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ViTriController.cs",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Controllers\\ViTriController.cs",
+              "RelativeDocumentMoniker": "Website_Library\\Controllers\\ViTriController.cs",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Controllers\\ViTriController.cs",
+              "RelativeToolTip": "Website_Library\\Controllers\\ViTriController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T09:16:20.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "TAIKHOAN.cs",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Models\\MetaData\\TAIKHOAN.cs",
+              "RelativeDocumentMoniker": "Website_Library\\Models\\MetaData\\TAIKHOAN.cs",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Models\\MetaData\\TAIKHOAN.cs",
+              "RelativeToolTip": "Website_Library\\Models\\MetaData\\TAIKHOAN.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T09:25:40.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "SinhVien_DAO.cs",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Models\\DAO\\SinhVien_DAO.cs",
+              "RelativeDocumentMoniker": "Website_Library\\Models\\DAO\\SinhVien_DAO.cs",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Models\\DAO\\SinhVien_DAO.cs",
+              "RelativeToolTip": "Website_Library\\Models\\DAO\\SinhVien_DAO.cs",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAHwAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T09:19:52.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "Website_Library\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "Website_Library\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T09:17:57.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\Sach\\Index.cshtml",
               "RelativeDocumentMoniker": "Website_Library\\Views\\Sach\\Index.cshtml",
@@ -439,12 +673,11 @@
               "RelativeToolTip": "Website_Library\\Views\\Sach\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-03T08:56:07.937Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T08:56:07.937Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 31,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Website_Library\\Views\\Shared\\_Layout.cshtml",
@@ -452,12 +685,11 @@
               "RelativeToolTip": "Website_Library\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAAHoAAAAAAAAAAAAAAI4AAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-03T08:46:09.458Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T08:46:09.458Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 37,
               "Title": "SachController.cs",
               "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Controllers\\SachController.cs",
               "RelativeDocumentMoniker": "Website_Library\\Controllers\\SachController.cs",
@@ -465,12 +697,11 @@
               "RelativeToolTip": "Website_Library\\Controllers\\SachController.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAB8AAABgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T08:55:18.299Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T08:55:18.299Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 42,
               "Title": "ForgotPassword.cshtml",
               "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\Account\\ForgotPassword.cshtml",
               "RelativeDocumentMoniker": "Website_Library\\Views\\Account\\ForgotPassword.cshtml",
@@ -478,12 +709,11 @@
               "RelativeToolTip": "Website_Library\\Views\\Account\\ForgotPassword.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-03T08:05:43.569Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T08:05:43.569Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 39,
               "Title": "ThongTinCaNhan.cshtml",
               "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\SinhVien\\ThongTinCaNhan.cshtml",
               "RelativeDocumentMoniker": "Website_Library\\Views\\SinhVien\\ThongTinCaNhan.cshtml",
@@ -491,12 +721,11 @@
               "RelativeToolTip": "Website_Library\\Views\\SinhVien\\ThongTinCaNhan.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-03T08:45:07.509Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T08:45:07.509Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 44,
               "Title": "PasswordAttribute.cs",
               "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Models\\MetaData\\PasswordAttribute.cs",
               "RelativeDocumentMoniker": "Website_Library\\Models\\MetaData\\PasswordAttribute.cs",
@@ -504,12 +733,11 @@
               "RelativeToolTip": "Website_Library\\Models\\MetaData\\PasswordAttribute.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAABdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T07:51:58.661Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T07:51:58.661Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 46,
               "Title": "PhoneNumberAttribute.cs",
               "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Models\\MetaData\\PhoneNumberAttribute.cs",
               "RelativeDocumentMoniker": "Website_Library\\Models\\MetaData\\PhoneNumberAttribute.cs",
@@ -517,12 +745,11 @@
               "RelativeToolTip": "Website_Library\\Models\\MetaData\\PhoneNumberAttribute.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T07:48:26.101Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T07:48:26.101Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 40,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Website_Library\\Controllers\\AccountController.cs",
@@ -530,12 +757,11 @@
               "RelativeToolTip": "Website_Library\\Controllers\\AccountController.cs",
               "ViewState": "AQIAAEEAAAAAAAAAAAAYwJ8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T18:26:22.938Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-02T18:26:22.938Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 41,
               "Title": "PasswordHasher.cs",
               "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Models\\PasswordHasher.cs",
               "RelativeDocumentMoniker": "Website_Library\\Models\\PasswordHasher.cs",
@@ -543,12 +769,11 @@
               "RelativeToolTip": "Website_Library\\Models\\PasswordHasher.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T08:21:31.129Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T08:21:31.129Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 43,
               "Title": "Change_Password.cshtml",
               "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\Account\\Change_Password.cshtml",
               "RelativeDocumentMoniker": "Website_Library\\Views\\Account\\Change_Password.cshtml",
@@ -556,12 +781,11 @@
               "RelativeToolTip": "Website_Library\\Views\\Account\\Change_Password.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-03T08:07:32.765Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T08:07:32.765Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 45,
               "Title": "_Login.cshtml",
               "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\Shared\\_Login.cshtml",
               "RelativeDocumentMoniker": "Website_Library\\Views\\Shared\\_Login.cshtml",
@@ -569,23 +793,11 @@
               "RelativeToolTip": "Website_Library\\Views\\Shared\\_Login.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAABnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-03T08:09:50.983Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T08:09:50.983Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Model1.edmx [Diagram1]",
-              "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Models\\Model1.edmx",
-              "RelativeDocumentMoniker": "Website_Library\\Models\\Model1.edmx",
-              "ToolTip": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Models\\Model1.edmx [Diagram1]",
-              "RelativeToolTip": "Website_Library\\Models\\Model1.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2024-06-02T18:22:20.33Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 47,
               "Title": "Web.config",
               "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Web.config",
               "RelativeDocumentMoniker": "Website_Library\\Web.config",
@@ -598,7 +810,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 48,
               "Title": "AdminLogin.cshtml",
               "DocumentMoniker": "C:\\Users\\nerve\\OneDrive\\Desktop\\DOANCOSO\\Website_Library\\Views\\Admin\\AdminLogin.cshtml",
               "RelativeDocumentMoniker": "Website_Library\\Views\\Admin\\AdminLogin.cshtml",

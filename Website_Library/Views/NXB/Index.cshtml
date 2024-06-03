@@ -27,6 +27,8 @@
                     <thead>
                         <tr>
                             <th style="color: #333;">Tên NXB</th>
+                            <th style="color: #333;">Số điện thoại</th>
+                            <th style="color: #333;">Địa chỉ</th>
                             <th style="color: #333;">Thao tác</th>
 
                         </tr>
@@ -37,6 +39,8 @@
                             {
                             <tr>
                                 <td>@Html.DisplayFor(modelItem => item.TenNXB)</td>
+                                <td>@Html.DisplayFor(modelItem => item.DienThoai)</td>
+                                <td>@Html.DisplayFor(modelItem => item.DiaChi)</td>
                                 <td>
                                     @*@Html.ActionLink("Sửa", "Edit", new { id = item.MaNXB }, new { @class = "btn btn-primary btn-sm" })
                                         @Html.ActionLink("Chi tiết", "Details", new { id = item.MaNXB }, new { @class = "btn btn-success btn-sm" })

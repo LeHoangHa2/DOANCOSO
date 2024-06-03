@@ -20,6 +20,8 @@
     <EntitySetMapping Name="NXBs">
       <EntityTypeMapping TypeName="Model.NXB">
         <MappingFragment StoreEntitySet="NXB">
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="DienThoai" ColumnName="DienThoai" />
           <ScalarProperty Name="MaNXB" ColumnName="MaNXB" />
           <ScalarProperty Name="TenNXB" ColumnName="TenNXB" />
         </MappingFragment>
@@ -86,6 +88,8 @@
     <EntitySetMapping Name="TacGias">
       <EntityTypeMapping TypeName="Model.TacGia">
         <MappingFragment StoreEntitySet="TacGia">
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="DienThoai" ColumnName="DienThoai" />
           <ScalarProperty Name="MaTacGia" ColumnName="MaTacGia" />
           <ScalarProperty Name="TenTacGia" ColumnName="TenTacGia" />
         </MappingFragment>

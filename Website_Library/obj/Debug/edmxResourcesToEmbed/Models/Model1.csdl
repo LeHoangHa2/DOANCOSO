@@ -24,6 +24,8 @@
     <Property Name="MaNXB" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="TenNXB" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="Saches" Relationship="Self.FK_Sach_NXB" FromRole="NXB" ToRole="Sach" />
+    <Property Name="DienThoai" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="DiaChi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="PhieuMuon">
     <Key>
@@ -94,6 +96,8 @@
     <Property Name="MaTacGia" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="TenTacGia" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="Saches" Relationship="Self.FK_Sach_TacGia" FromRole="TacGia" ToRole="Sach" />
+    <Property Name="DienThoai" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="DiaChi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="TAIKHOAN">
     <Key>

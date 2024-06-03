@@ -73,7 +73,7 @@ namespace Website_Library.Controllers
         // POST: NXB/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "MaNXB,TenNXB")] NXB nXB)
+        public ActionResult Edit([Bind(Include = "MaNXB,TenNXB,DienThoai,DiaChi")] NXB nXB)
         {
             if (ModelState.IsValid)
             {

@@ -22,6 +22,8 @@ namespace Website_Library.Models
     
         public string MaTacGia { get; set; }
         public string TenTacGia { get; set; }
+        public string DienThoai { get; set; }
+        public string DiaChi { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Sach> Saches { get; set; }

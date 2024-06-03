@@ -20,6 +20,8 @@
     </Key>
     <Property Name="MaNXB" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="TenNXB" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="DienThoai" Type="nvarchar" MaxLength="20" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="PHANQUYEN">
     <Key>
@@ -89,6 +91,8 @@
     </Key>
     <Property Name="MaTacGia" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="TenTacGia" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="DienThoai" Type="nvarchar" MaxLength="20" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="TAIKHOAN">
     <Key>

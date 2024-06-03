@@ -18,14 +18,22 @@ namespace Website_Library.Controllers
         private Data_Entities db = new Data_Entities();
 
         // GET: Sach
-        public ActionResult Index(int? page)
+        public ActionResult Index(int? page, string search)
+
         {
+            IQueryable<Sach> query = db.Saches;
+
+            // Lọc theo từ khóa tìm kiếm
+            if (!string.IsNullOrEmpty(search))
+            {
+                query = query.Where(sp => sp.TenSach.Contains(search));
+            }
             int pageSize = 10; // Số lượng sách mỗi trang
             int pageNumber = (page ?? 1); // Số trang hiện tại, mặc định là 1 nếu không có giá trị
 
-            var books = db.Saches.OrderBy(s => s.MaSach).ToList();
+            //var books = db.Saches.OrderBy(s => s.MaSach).ToList();
 
-            var pagedListBooks = books.ToPagedList(pageNumber, pageSize);
+            var pagedListBooks = query.OrderBy(s=>s.MaSach).ToPagedList(pageNumber, pageSize);
 
             return View(pagedListBooks);
         }

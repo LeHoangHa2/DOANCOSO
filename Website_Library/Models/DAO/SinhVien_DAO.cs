@@ -111,15 +111,15 @@ namespace Website_Library.Models.DAO
                     // If the student exists, update its properties with the new values
                     if (existingSinhVien != null)
                     {
-                        existingSinhVien.MaSinhVien = sinhVien.MaSinhVien;
+                        //existingSinhVien.MaSinhVien = sinhVien.MaSinhVien;
                         existingSinhVien.TenSinhVien = sinhVien.TenSinhVien;
                         existingSinhVien.NgaySinh = sinhVien.NgaySinh;
                         existingSinhVien.GioiTinh = sinhVien.GioiTinh;
                         existingSinhVien.DiaChi = sinhVien.DiaChi;
                         existingSinhVien.DienThoai = sinhVien.DienThoai;
                         existingSinhVien.Email = sinhVien.Email;
-                        existingSinhVien.TaiKhoan = sinhVien.TaiKhoan;
-                        existingSinhVien.MatKhau = sinhVien.MatKhau;
+                        //existingSinhVien.TaiKhoan = sinhVien.TaiKhoan;
+                        //existingSinhVien.MatKhau = sinhVien.MatKhau;
 
                         // Save changes to the database
                         db.SaveChanges();

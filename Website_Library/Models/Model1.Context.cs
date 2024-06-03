@@ -31,6 +31,7 @@ namespace Website_Library.Models
         public virtual DbSet<PhieuMuon> PhieuMuons { get; set; }
         public virtual DbSet<Sach> Saches { get; set; }
         public virtual DbSet<SinhVien> SinhViens { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<TacGia> TacGias { get; set; }
         public virtual DbSet<TAIKHOAN> TAIKHOANs { get; set; }
         public virtual DbSet<TheLoai> TheLoais { get; set; }

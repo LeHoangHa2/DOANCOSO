@@ -77,6 +77,16 @@
     <Property Name="MatKhau" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="PhieuMuons" Relationship="Self.FK_PhieuMuon_SinhVien" FromRole="SinhVien" ToRole="PhieuMuon" />
   </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
   <EntityType Name="TacGia">
     <Key>
       <PropertyRef Name="MaTacGia" />
@@ -206,6 +216,7 @@
     <EntitySet Name="PhieuMuons" EntityType="Self.PhieuMuon" />
     <EntitySet Name="Saches" EntityType="Self.Sach" />
     <EntitySet Name="SinhViens" EntityType="Self.SinhVien" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
     <EntitySet Name="TacGias" EntityType="Self.TacGia" />
     <EntitySet Name="TAIKHOANs" EntityType="Self.TAIKHOAN" />
     <EntitySet Name="TheLoais" EntityType="Self.TheLoai" />

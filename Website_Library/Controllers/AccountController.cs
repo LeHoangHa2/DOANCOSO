@@ -147,7 +147,17 @@ namespace Website_Library.Controllers
                 ModelState.AddModelError("Password", "Không thay đổi được Password");
                 return View(model);
             }
-
+            SinhVien SinhVien = SinhVien_DAO.Read(model.Username);
+            if (SinhVien != null)
+            {
+                SinhVien.MatKhau = model.New_Password;
+                SinhVien.MatKhau = PasswordHasher.HashPassword(model.New_Password);
+                if (!SinhVien_DAO.Update(SinhVien)) 
+                {
+                    ModelState.AddModelError("Password", "Không thay đổi được Password cho SinhVien");
+                    return View(model);
+                }
+            }
             Response.Cookies["TaiKhoan"].Value = null;
             Response.Cookies["TaiKhoan"].Expires = DateTime.Now.AddDays(-1);
             Response.Cookies["ChucNang"].Value = null;

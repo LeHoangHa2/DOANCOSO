@@ -4,13 +4,14 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="5a01919b786a4130b4c6a13b1b0fd2b6" Name="Diagram1">
+      <Diagram DiagramId="0dda6d8ab7d54db287c6467b8e63116f" Name="Diagram1">
         <EntityTypeShape EntityType="Model.CHUCNANG" Width="1.5" PointX="5.75" PointY="6" IsExpanded="true" />
         <EntityTypeShape EntityType="Model.LOAI_TAIKHOAN" Width="1.5" PointX="8" PointY="5.875" IsExpanded="true" />
         <EntityTypeShape EntityType="Model.NXB" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="true" />
         <EntityTypeShape EntityType="Model.PhieuMuon" Width="1.5" PointX="5.25" PointY="1.75" IsExpanded="true" />
         <EntityTypeShape EntityType="Model.Sach" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="Model.SinhVien" Width="1.5" PointX="3" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.sysdiagram" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="Model.TacGia" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
         <EntityTypeShape EntityType="Model.TAIKHOAN" Width="1.5" PointX="10.25" PointY="5.875" IsExpanded="true" />
         <EntityTypeShape EntityType="Model.TheLoai" Width="1.5" PointX="0.75" PointY="7.875" IsExpanded="true" />
